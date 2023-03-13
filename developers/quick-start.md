@@ -4,7 +4,7 @@ description: 0 to 1 integration with the Optimistic Asserter.
 
 # Quick start
 
-The primary integration point into the UMA ecosystem is the Optimistic Assterter (OA). The OA is an _ **oracle for arbitrary off-chain data** _ which leverages an interactive escalation game between _asserters_ and _disputers_ and is secured by _economic incentives_. It differs from the Optimistic Oracle (getting started can be found [here](optimistic-oracle/getting-started.md)) by being easier to reason about and simpler in integration points.
+The primary integration point into the UMA ecosystem is the Optimistic Asserter (OA). The OA is an _ **oracle for arbitrary off-chain data** _ which leverages an interactive escalation game between _asserters_ and _disputers_ and is secured by _economic incentives_. It differs from the Optimistic Oracle (getting started can be found [here](optimistic-oracle/getting-started.md)) by being easier to reason about and simpler in integration points.
 
 This getting started tutorial will show you how to go from 0 to 1 with the Optimistic Asserter by executing the simplest possible assertion flow. Later in the docs you can find more information on how the Optimistic Asserter works and dig deeper into its mechanism and more sophisticated code examples.&#x20;
 
