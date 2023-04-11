@@ -48,7 +48,7 @@ The contract discussed in this tutorial can be found at `dev-quickstart-oov3/src
 
 #### Asserting data
 
-`assertDataFor` method allows any data provider to assert some value of `data` for the associated `dataId`. The caller sets the `asserter` as the address that will recive bonds at resolution of the data assertion (this could be their address as well).
+`assertDataFor` method allows any data provider to assert some value of `data` for the associated `dataId`. The caller sets the `asserter` as the address that will receive bonds at resolution of the data assertion (this could be their address as well).
 
 ```solidity
    function assertDataFor(
