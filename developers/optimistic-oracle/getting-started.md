@@ -32,7 +32,7 @@ First, we will work through the basic flow for _asking the oracle for a piece of
 
 The contract used in this tutorial is meant to be a simple data request flow. The contract exposes a simple `requestData` function which asks the OO a simple question about the weather.
 
-1. [Go to this example contract on Remix](https://remix.ethereum.org/#version=soljson-v0.8.16+commit.07a7930e.js&optimize=false&runs=200&gist=&lang=en&evmVersion=null). This gives you the minimum data request and retrieval flow possible. We'll work through the code in the sections that follow.
+1. [Go to this example contract on Remix](https://remix.ethereum.org/#version=soljson-v0.8.16+commit.07a7930e.js&optimize=false&runs=200&gist=504935d3fa10825174c3c3271669c2f0&lang=en&evmVersion=null). This gives you the minimum data request and retrieval flow possible. We'll work through the code in the sections that follow.
 2. Click on "gist-fba..." to see the files in the gist, and click `OO_GettingStarted.sol` to open to Solidity file.
 3. In the far left hand menu, click the link to deploy and run transactions (which looks like the Ethereum logo and a right arrow).
 4. In the "Environment" dropdown, choose "Injected Provider," and connect to your wallet. **Make sure you are connected to Görli within your metamask wallet!** You don't want to deploy to a real network and spend real gas, and the Görli Optimistic Oracle address hardcoded into the contract will not work on other networks.
