@@ -4,11 +4,11 @@ description: Using the Optimistic Oracle V3 to assert arbitrary off-chain data o
 
 # 💾 Data Asserter
 
-This section covers the [Data Asserter contract](https://github.com/UMAprotocol/dev-quickstart-oov3/blob/master/src/DataAsserter.sol), which is available in the Optimistic Oracle V3 [quick-start repo](https://github.com/UMAprotocol/dev-quickstart-oov3). This tutorial shows an example of how to build an arbitrary data asserter contract, using the UMA [Optimistic Oracle V3 (OOV3)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/optimistic-oracle-v3/implementation/OptimisticOracleV3.sol) contract. This enables you to assert to the correctness of some off-chain process and store the output on-chain. This tutorial acts as a starting point to show how the OOV3 can be flexibility used in a sample integration.
+This section covers the [Data Asserter contract](https://github.com/UMAprotocol/dev-quickstart-oov3/blob/master/src/DataAsserter.sol), which is available in the Optimistic Oracle V3 [quick-start repo](https://github.com/UMAprotocol/dev-quickstart-oov3). This tutorial shows an example of how to build an arbitrary data asserter contract, using the UMA [Optimistic Oracle V3 (OOV3)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/optimistic-oracle-v3/implementation/OptimisticOracleV3.sol) contract. This enables you to assert to the correctness of some off-chain process and store the output on-chain. This tutorial acts as a starting point to show how the OOV3 can be flexibly used in a sample integration.
 
 ### Data Asserter
 
-This smart contract allows data providers to assert the correctness of a data point, within any arbitrary data set, and bring the result on-chain. This contract is designed to be maximally open ended, enabling any kind of data to be asserted. For example, and for illustrative purposes of this tutorial, we will assert weather data on-chain. Note, though, that this kind of assertion flow and the associated OOV3 integration could build a wide range of assertions with arbitrary complexity. For example you could use the same structure to bring on-chain complex data associated with Beacon chain validator set to build a Liquid staking derivative, enable complex off-chain computation with on-chain outputs or anything that has a defined deterministic input output relationship.
+This smart contract allows data providers to assert the correctness of a data point, within any arbitrary data set, and bring the result on-chain. This contract is designed to be maximally open ended, enabling any kind of data to be asserted. For example, and for illustrative purposes of this tutorial, we will assert weather data on-chain. Note, though, that this kind of assertion flow and the associated OOV3 integration could build a wide range of assertions with arbitrary complexity. For example, you could use the same structure to bring on-chain complex data associated with the Beacon chain validator set to build a Liquid staking derivative, enable complex off-chain computation with on-chain outputs, or anything that has a deterministically defined input output relationship.
 
 Anyone can assert a data point against the Data Asserter contract, with a known dataId and datapoint. Independent 3rd parties can then verify the correctness of this data against the dataId.
 
@@ -229,7 +229,7 @@ Note that at any point you can look at your env by running `printenv` within you
 
 #### Asserting the data point
 
-Next, we will call the Data Asserter contract and assert the data point and data ID that we set within our environment. Note that on the Goerli testnet the default bond for the default currency is set to 0. This is done to somewhat simplify the interactions: you don't need to mint yourself any USDC and you don't need to approve the Data Asserter to pull it from your account. Clearly, this is different to how this would be structured in reality but for demonstration purposes it keeps thing easier.
+Next, we will call the Data Asserter contract and assert the data point and data ID that we set within our environment. Note that on the Goerli testnet the default bond for the default currency is set to 0. This is done to somewhat simplify the interactions: you don't need to mint yourself any USDC and you don't need to approve the Data Asserter to pull it from your account. Clearly, this is different to how this would be structured in reality but for demonstration purposes it keeps things easier.
 
 ```bash
 export ASSERTION_TX=$(cast send --json \
