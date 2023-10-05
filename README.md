@@ -16,4 +16,6 @@ UMA's oracle is used to create many other types of products and protocols. For i
 
 ## [Using UMA](using-uma/voting-walkthrough.md)
 
+## [Verification Guide](./#verification-guide)
+
 ## [Resources](resources/network-addresses.md)

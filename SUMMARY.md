@@ -40,6 +40,13 @@
 * [Disputing Oracle Data](using-uma/disputing-oracle-data.md)
 * [Resolving Disputes](using-uma/resolving-disputes.md)
 
+## Verification Guide
+
+* [Verification System](verification-guide/verification-system.md)
+* [YES\_OR\_NO](verification-guide/yes\_or\_no.md)
+* [oSnap](verification-guide/osnap.md)
+* [Across](verification-guide/across.md)
+
 ## Resources
 
 * [Network Information](resources/network-addresses.md)
