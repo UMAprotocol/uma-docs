@@ -6,7 +6,9 @@ description: Only required for testing the dispute flow
 
 Whenever the assertion is disputed on a production network this triggers DVM request to be resolved by UMA voters. This might be impractical to fully simulate this in a testing environment, hence, developers can use [mocked oracle contract](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/data-verification-mechanism/test/MockOracleAncillary.sol) to resolve requests as they had been returned by DVM.
 
-Interacting with Optimistic Oracle requires having whitelisted price identifier and bonding currency. In production networks these are approved by UMA token holders as part of governance voting. When testing, it might be easier for developers to use their own set of UMA ecosystem contracts where they have full control over such whitelisting process.
+Interacting with Optimistic Oracle requires having whitelisted price identifier and bonding currency. In production networks these are approved by UMA token holders as part of governance voting. When testing, it might be easier for developers to use their own set of UMA ecosystem contracts where they have full control over such whitelisting process.\
+\
+Follow the written tutorial below or check out the video tutorial on [Youtube](https://www.youtube.com/watch?v=1sW8vcqTRCE).
 
 ### Deploying sandboxed Oracle environment
 

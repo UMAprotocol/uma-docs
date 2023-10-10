@@ -6,6 +6,8 @@ All oSnap propsals are already monitored by bots run by UMA's core team and a de
 
 This tutorial walks through an example of how to setup the oSnap monitoring bot from UMA's [protocol repository](https://github.com/UMAprotocol/protocol/) that watches for emitted contract events and sends alerts.
 
+The Node package method described below is also available on [Youtube](https://www.youtube.com/watch?v=R3m0qFK0bLg).
+
 ### Installation
 
 #### Docker method
