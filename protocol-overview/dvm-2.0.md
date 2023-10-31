@@ -82,5 +82,5 @@ If a vote does not satisfy both of these constraints, it will roll.&#x20;
 
 There are certain situations in the DVM 2.0 where voters may want to delete votes. A good example of this would be in the case of spam deletion, where needless price requests are submitted in order by an attacker to try to create some sort of desired slashing conditions.
 
-In the DVM 2.0, votes are deleted once they have rolled a certain number of times. So if voters choose to not vote on the resolution of price requests, and either the GAT or PAT are not met for a set number of voting rounds, those price requests will become deletable. At the time of DVM 2.0 initial deployment, the number of times a vote is rolled before being deleted is 4.
+In the DVM 2.0, votes are deleted once they have rolled a certain number of times. So if voters choose to not vote on the resolution of price requests, and either the GAT or SPAT are not met for a set number of voting rounds, those price requests will become deletable. At the time of DVM 2.0 initial deployment, the number of times a vote is rolled before being deleted is 4.
 
