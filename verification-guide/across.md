@@ -42,21 +42,21 @@ VS Code (optional)
 
 * If using VS code, open the terminal and run the following command:
 
-`git clone https://github.com/across-protocol/relayer-v2`
+```
+git clone https://github.com/across-protocol/relayer-v2
+```
 
 **Step 3: Run Redis**
 
 Open a terminal window and run:
 
-`redis-server`
-
-`From the README, run the three commands:`
-
-`cd relayer-v2`
-
-`yarn install`
-
-`yarn build`
+```
+redis-server
+From the README, run the three commands:
+cd relayer-v2
+yarn install
+yarn build
+```
 
 **Step 4: Environment Variables**
 
@@ -68,15 +68,13 @@ Open a terminal window and run:
   * You can use [https://chainlist.org/](https://chainlist.org/) to find the ID by network.&#x20;
   * Include the NODE\_URL\_324 for zksync below even though it hasn’t been added to the .env.example file yet:
 
-`RPC_PROVIDER_ALCHEMY_1=https://eth-mainnet.g.alchemy.com/v2/{API_KEY}`
-
-`RPC_PROVIDER_ALCHEMY_10=https://opt-mainnet.g.alchemy.com/v2/{API_KEY}`
-
-`RPC_PROVIDER_ALCHEMY_137=https://polygon-mainnet.g.alchemy.com/v2/{API_KEY}`
-
-`RPC_PROVIDER_ALCHEMY_42161=https://arb-mainnet.g.alchemy.com/v2/{API_KEY}`
-
-`NODE_URL_324=https://mainnet.era.zksync.io`
+```
+RPC_PROVIDER_ALCHEMY_1=https://eth-mainnet.g.alchemy.com/v2/{API_KEY}
+RPC_PROVIDER_ALCHEMY_10=https://opt-mainnet.g.alchemy.com/v2/{API_KEY}
+RPC_PROVIDER_ALCHEMY_137=https://polygon-mainnet.g.alchemy.com/v2/{API_KEY}
+RPC_PROVIDER_ALCHEMY_42161=https://arb-mainnet.g.alchemy.com/v2/{API_KEY}
+NODE_URL_324=https://mainnet.era.zksync.io
+```
 
 **Step 5: Run the script**
 
@@ -116,3 +114,9 @@ When the script finishes running, check the Validation results as shown below. T
   "invalidReason": "Disputed pending root bundle:\n.....
 // removed the rest of the invalidReason for the example
 ```
+
+**Appendix**
+
+For additional documentation on Across root bundles, visit:
+
+[https://docs.across.to/v/developer-docs/how-across-works/overview/disputing-root-bundles](https://docs.across.to/v/developer-docs/how-across-works/overview/disputing-root-bundles)  [https://docs.across.to/v/developer-docs/how-across-works/overview/validating-root-bundles](https://docs.across.to/v/developer-docs/how-across-works/overview/validating-root-bundles)

@@ -56,74 +56,51 @@ In the Discord Ticket, paste the screenshots of Tenderly and json formatter and 
 
 Tenderly:
 
-`[`
-
-&#x20; `{`
-
-&#x20;   `"to": "0x44108f0223a3c3028f5fe7aec7f9bb2e66bef82f",`
-
-&#x20;   `"operation": 0,`
-
-&#x20;   `"value": "0",`
-
-&#x20;   `"data": "0xa9059cbb0000000000000000000000009040e41ef5e8b281535a96d9a48acb8cfabd9a4800000000000000000000000000000000000000000014adf4b7320334b9000000"`
-
-&#x20; `}`
-
-`]`
-
-Snapshot IPFS:\
-`[`
-
-&#x20; `{`
-
-&#x20;   `"operation": "0",`
-
-&#x20;   `"data": "0xa9059cbb0000000000000000000000009040e41ef5e8b281535a96d9a48acb8cfabd9a4800000000000000000000000000000000000000000014adf4b7320334b9000000",`
-
-&#x20;   `"to": "0x44108f0223A3C3028F5Fe7AEC7f9bb2E66beF82F",`
-
-&#x20;   `"value": "0"`
-
-&#x20; `}`
-
-`]`
+```
+[
+  {
+    "to": "0x44108f0223a3c3028f5fe7aec7f9bb2e66bef82f",
+    "operation": 0,
+    "value": "0",
+    "data": "0xa9059cbb0000000000000000000000009040e41ef5e8b281535a96d9a48acb8cfabd9a4800000000000000000000000000000000000000000014adf4b7320334b9000000"
+  }
+]
+Snapshot IPFS:
+[
+  {
+    "operation": "0",
+    "data": "0xa9059cbb0000000000000000000000009040e41ef5e8b281535a96d9a48acb8cfabd9a4800000000000000000000000000000000000000000014adf4b7320334b9000000",
+    "to": "0x44108f0223A3C3028F5Fe7AEC7f9bb2E66beF82F",
+    "value": "0"
+  }
+]
+```
 
 Snapshot Transaction Object:
 
-`[`
-
-&#x20; `{`
-
-&#x20;   `"operation": "0",`
-
-&#x20;   `"data": "0xa9059cbb0000000000000000000000001ff9940e71b14ca308a3404fbd40f46d1408698200000000000000000000000000000000000000000000152d02c7e14af6800000",`
-
-&#x20;   `"to": "0x0391D2021f89DC339F60Fff84546EA23E337750f",`
-
-&#x20;   `"value": "0"`
-
-&#x20; `}`
-
-`]`
+```
+[
+  {
+    "operation": "0",
+    "data": "0xa9059cbb0000000000000000000000001ff9940e71b14ca308a3404fbd40f46d1408698200000000000000000000000000000000000000000000152d02c7e14af6800000",
+    "to": "0x0391D2021f89DC339F60Fff84546EA23E337750f",
+    "value": "0"
+  }
+]
+```
 
 Tenderly Data:
 
-`[`
-
-&#x20; `{`
-
-&#x20;   `"to": "0x0391d2021f89dc339f60fff84546ea23e337750f",`
-
-&#x20;   `"operation": 0,`
-
-&#x20;   `"value": "0",`
-
-&#x20;   `"data": "0xa9059cbb0000000000000000000000001ff9940e71b14ca308a3404fbd40f46d1408698200000000000000000000000000000000000000000000152d02c7e14af6800000"`
-
-&#x20; `}`
-
-`]`
+```
+// [
+  {
+    "to": "0x0391d2021f89dc339f60fff84546ea23e337750f",
+    "operation": 0,
+    "value": "0",
+    "data": "0xa9059cbb0000000000000000000000001ff9940e71b14ca308a3404fbd40f46d1408698200000000000000000000000000000000000000000000152d02c7e14af6800000"
+  }
+]Some code
+```
 
 The following should be checked:
 
@@ -147,42 +124,28 @@ Here is what the example would look like:
 
 ![](https://lh6.googleusercontent.com/X6YmY3KqrdHNzD7PO3dvNWOSFl374VguSZsXs0xZv\_-L9npKaa7AcxgrzzUwXQveeJzyeILCIdX2f1FPvyhOIHlMkIfncnZStgrTe-lF85PU2woo3XfH3taxibvPDrh0HHL4pgBJK8ctGUOyZOd7MRg)
 
-The ‘Output’ for a Transfer should look as the below:\
-`{`
+The ‘Output’ for a Transfer should look as the below:
 
-&#x20; `"method": "transfer",`
-
-&#x20; `"types": [`
-
-&#x20;   `"address",`
-
-&#x20;   `"uint256"`
-
-&#x20; `],`
-
-&#x20; `"inputs": [`
-
-&#x20;   `"9040e41eF5E8b281535a96D9a48aCb8cfaBD9a48",`
-
-&#x20;   `{`
-
-&#x20;     `"type": "BigNumber",`
-
-&#x20;     `"hex": "0x14adf4b7320334b9000000"`
-
-&#x20;   `}`
-
-&#x20; `],`
-
-&#x20; `"names": [`
-
-&#x20;   `"to",`
-
-&#x20;   `"amount"`
-
-&#x20; `]`
-
-`}`
+```
+{
+  "method": "transfer",
+  "types": [
+    "address",
+    "uint256"
+  ],
+  "inputs": [
+    "9040e41eF5E8b281535a96D9a48aCb8cfaBD9a48",
+    {
+      "type": "BigNumber",
+      "hex": "0x14adf4b7320334b9000000"
+    }
+  ],
+  "names": [
+    "to",
+    "amount"
+  ]
+}
+```
 
 Verify the following:
 
