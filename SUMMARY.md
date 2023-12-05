@@ -14,9 +14,9 @@
 * [oSnap](developers/osnap/README.md)
   * [🚀 oSnap Quick Start](developers/osnap/osnap-quick-start.md)
   * [🎯 oSnap Deployment Tutorial](developers/osnap/osnap-deployment-tutorial.md)
-  * [⚡ Snapshot Tutorial](developers/osnap/snapshot-tutorial.md)
+  * [⚡ Snapshot Proposal + Transaction Tutorial](developers/osnap/snapshot-tutorial.md)
   * [✅ oSnap Proposal Verification](developers/osnap/osnap-proposal-verification.md)
-  * [⛏ oSnap Module Admin Functions](developers/osnap/osnap-module-admin-functions.md)
+  * [📏 oSnap Configuration Parameters](developers/osnap/osnap-configuration-parameters.md)
   * [🤖 Monitoring Bot Setup](developers/osnap/monitoring-bot-setup.md)
 * [Setting Custom Bond and Liveness Parameters](developers/setting-custom-bond-and-liveness-parameters.md)
 

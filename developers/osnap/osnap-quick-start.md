@@ -1,39 +1,46 @@
+---
+description: Get Started with oSnap in 2 Minutes
+---
+
 # 🚀 oSnap Quick Start
 
-{% embed url="https://www.youtube.com/watch?v=R97GIW5M_r0" %}
-Simple guide for setting up and using oSnap
+{% embed url="https://www.youtube.com/watch?v=tj_m6XMoPO4" %}
+oSnap Deployment Speed Run
 {% endembed %}
 
-“oSnap” is short for Optimistic Snapshot Execution.&#x20;
+Welcome to the oSnap Quick Start guide: a high-level overview to start using oSnap!
 
-oSnap lets DAOs propose transactions, do an off-chain governance vote, and have the transaction data submitted in a trustless fashion.
+“oSnap” is short for **O**ptimistic **Snap**shot Execution.&#x20;
 
-<figure><img src="../../.gitbook/assets/UMA-oSnap-process3.png" alt=""><figcaption></figcaption></figure>
+oSnap enables DAOs to propose transactions, conduct an off-chain governance vote, and have the transaction data executed in a trustless fashion.&#x20;
 
-What you need to get started
+<figure><img src="../../.gitbook/assets/oSnap Deployment Graphic.png" alt="" width="375"><figcaption></figcaption></figure>
 
-* Snapshot Space
-* Safe with multi-sig (or Safe with on-chain governance)
+## Prerequisites
 
-Here are the step-by-step instructions for using oSnap.
+* Snapshot Space&#x20;
+* Safe with Multi-Sig (or Safe with on-chain governance)
 
-* Create a Safe and Snapshot Space, or connect to your current accounts.&#x20;
-* Go to Safe Apps, install the Zodiac app, and install the oSnap module through Zodiac.
-* Set the proposal bond, challenge period, and Snapshot Space.
-* Link the oSnap module to your Snapshot Space with SafeSnap.
-* Your oSnap module address is added to the SafeSnap plugin configuration to enforce the results of proposals on-chain.
+## **Step-by-step instructions for using oSnap**
 
-Done! Now, for your first proposal:
+1. Create a Safe and Snapshot Space (or use existing accounts)
+2. Navigate to Snapshot Space Advanced Settings
+3. Add 'oSnap by UMA' plugin
+4. Add your Safe treasury
+5. Save revised Snapshot space settings by signing a message
+6. Click 'Activate oSnap' from Treasury to access the oSnap Safe App
+7. Sign transaction in Safe
 
-* Create a proposal and Snapshot vote, along with the transactions to execute if the proposal passes.
+## Create Your First Proposal
+
+* Create a new Snapshot proposal with the transactions to execute if the proposal passes and is verified by UMA.
+  * &#x20;:exclamation:_Note: Currently, oSnap supports basic voting._&#x20;
 * Invite the community to vote on the proposal.
-* Once the Snapshot voting period ends, anyone can propose the transactions by posting a bond.
-* After the challenge period, execute the transactions on-chain through the Snapshot interface.
+* If the proposal passes and default settings are enabled, UMA bots will execute a transaction proposing execution of the transactions and post a bond to UMA's Optimistic.&#x20;
+* After the Optimistic Oracle verifies the transactions and associated transactions are valid, UMA bots will execute this transaction for oSnap modules with default settings.&#x20;
 
-You can start using oSnap today and announce to your DAO the good news of its newfound superpowers.
-
-Want to talk to the team?
+## Get in Touch with UMA
 
 * Drop a message in the [UMA Discord Server](https://discord.com/invite/jsb9XQJ)
 * Send an email to integrations@umaproject.org
-* Or drop your details in [this form](https://airtable.com/shrW1iJRbU4tEI9go) and we'll reach out
+* Or drop your details in [this form](https://uma.xyz/osnap?modal=try-osnap) and we'll reach out

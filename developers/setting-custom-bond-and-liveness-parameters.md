@@ -1,3 +1,9 @@
+---
+description: >-
+  Overview of Setting Customer Bond and Liveness Parameter in UMA's Optimistic
+  Oracle
+---
+
 # Setting Custom Bond and Liveness Parameters
 
 Every request to UMA's Optimistic Oracle includes bond and liveness settings that specify the size of the bond that proposers (and disputers) are required to post, the token used for bonding, and the liveness window, which is the challenge period during which a proposal can be challenged.

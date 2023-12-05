@@ -1,3 +1,7 @@
+---
+description: Overview of How To Set-up and Run an oSnap Monitoring Bot
+---
+
 # 🤖 Monitoring Bot Setup
 
 The oSnap Monitoring Bot monitors all transactions to your oSnap module. It also verifies that proposed transactions are valid according to the rules of the oSnap module (ie. the snapshot quorum and voting period meet the oSnap rules). Any unverified proposed transactions should be reviewed further and possibly disputed.&#x20;
