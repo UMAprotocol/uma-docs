@@ -7,7 +7,7 @@
 * [Quick start](developers/quick-start.md)
 * [Optimistic Oracle](developers/optimistic-oracle-v3/README.md)
   * [🕖 Prediction Market](developers/optimistic-oracle-v3/prediction-market.md)
-  * [👨🏫 👨🏫 Insurance](developers/optimistic-oracle-v3/in-depth-tutorial-insurance.md)
+  * [👨🏫 Insurance](developers/optimistic-oracle-v3/in-depth-tutorial-insurance.md)
   * [💾 Data Asserter](developers/optimistic-oracle-v3/data-asserter.md)
   * [⚖ Escalation Managers](developers/optimistic-oracle-v3/escalation-managers.md)
   * [🏖 Sandboxed Oracle Environment](developers/optimistic-oracle/sandboxed-oracle-environment.md)
