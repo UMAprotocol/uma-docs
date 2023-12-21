@@ -33,7 +33,7 @@ The example proposal below proposes a funds transfer of 0.000005 ETH.
 
 For Snapshot proposals that pass on mainnets, UMA bots send a transaction requesting execution of the transactions and post a bond to UMA's Optimistic.&#x20;
 
-After the Optimistic Oracle verifies the transactions and associated transactions are valid, UMA bots will execute this transaction for oSnap modules with default settings. \
+After the Optimistic Oracle verifies that the transactions and associated transactions are valid, UMA bots will execute these transactions for oSnap modules using default settings, provided they require less than 500,000 gas. \
 \
 For testnet transaction execution, see the section below.
 

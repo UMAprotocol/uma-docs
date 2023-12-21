@@ -37,7 +37,7 @@ oSnap enables DAOs to propose transactions, conduct an off-chain governance vote
   * &#x20;:exclamation:_Note: Currently, oSnap supports basic voting._&#x20;
 * Invite the community to vote on the proposal.
 * If the proposal passes and default settings are enabled, UMA bots will execute a transaction proposing execution of the transactions and post a bond to UMA's Optimistic.&#x20;
-* After the Optimistic Oracle verifies the transactions and associated transactions are valid, UMA bots will execute this transaction for oSnap modules with default settings.&#x20;
+* After the Optimistic Oracle verifies that the transactions and associated transactions are valid, UMA bots will execute these transactions for oSnap modules using default settings, provided they require less than 500,000 gas.&#x20;
 
 ## Get in Touch with UMA
 
