@@ -4,7 +4,7 @@ description: >-
   settlement and event identification
 ---
 
-# 🕖 Prediction Market
+# Prediction Market
 
 This section covers the [Prediction Market contract](https://github.com/UMAprotocol/dev-quickstart-oov3/blob/master/src/PredictionMarket.sol), which is available in the Optimistic Oracle V3 [quick-start repo](https://github.com/UMAprotocol/dev-quickstart-oov3) and enables the creation of a binary prediction market using [Optimistic Oracle V3 (OOV3)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/optimistic-oracle-v3/implementation/OptimisticOracleV3.sol) assertions.
 
@@ -302,7 +302,7 @@ echo "BALANCE DEFAULT_CURRENCY" $(cast call $DEFAULT_CURRENCY_ADDRESS \
 	"balanceOf(address)(uint256)" $DEPLOYER_WALLET)
 ```
 
-Now, let's simulate how the `DEPLOYER_WALLET` would trade one position of the market by transferring the remaining 5,000  `OUTCOME_TOKEN_ONE` to another user. By doing this, `DEPLOYER_WALLET` is now only exposed to the outcome two ("no") because he only holds `OUTCOME_TOKEN_TWO`. On the other side, `USER_WALLET` is exposed to the outcome one ("yes") as he has traded some other currency against `OUTCOME_TOKEN_ONE`. This trade is out of the scope of this example, thats why we simulate it by running the following transfer:
+Now, let's simulate how the `DEPLOYER_WALLET` would trade one position of the market by transferring the remaining 5,000 `OUTCOME_TOKEN_ONE` to another user. By doing this, `DEPLOYER_WALLET` is now only exposed to the outcome two ("no") because he only holds `OUTCOME_TOKEN_TWO`. On the other side, `USER_WALLET` is exposed to the outcome one ("yes") as he has traded some other currency against `OUTCOME_TOKEN_ONE`. This trade is out of the scope of this example, thats why we simulate it by running the following transfer:
 
 ```bash
 cast send --mnemonic "$MNEMONIC" \

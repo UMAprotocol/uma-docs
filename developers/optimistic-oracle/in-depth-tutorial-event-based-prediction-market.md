@@ -4,7 +4,7 @@ description: >-
   settlement and event identification
 ---
 
-# 🕖 Event-Based Prediction Market
+# Event-Based Prediction Market
 
 In this section, we'll talk about the [Event Based Prediction market contract](https://github.com/UMAprotocol/dev-quickstart/blob/main/contracts/EventBasedPredictionMarket.sol), which you can find in the [developer's quick-start repo](https://github.com/UMAprotocol/dev-quickstart). This tutorial will show how event-based OO data requests can be used in a binary prediction market.
 

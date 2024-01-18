@@ -2,7 +2,7 @@
 description: Using the Optimistic Oracle V3 to assert arbitrary off-chain data on-chain.
 ---
 
-# 💾 Data Asserter
+# Data Asserter
 
 This section covers the [Data Asserter contract](https://github.com/UMAprotocol/dev-quickstart-oov3/blob/master/src/DataAsserter.sol), which is available in the Optimistic Oracle V3 [quick-start repo](https://github.com/UMAprotocol/dev-quickstart-oov3). This tutorial shows an example of how to build an arbitrary data asserter contract, using the UMA [Optimistic Oracle V3 (OOV3)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/optimistic-oracle-v3/implementation/OptimisticOracleV3.sol) contract. This enables you to assert to the correctness of some off-chain process and store the output on-chain. This tutorial acts as a starting point to show how the OOV3 can be flexibility used in a sample integration.
 
@@ -158,14 +158,16 @@ Replacing `xxx` with your infura key. This will create a local fork of the Goerl
 
 * `ETHERSCAN_API_KEY`: your secret API key used for contract verification on Etherscan if deploying on a public network (not required if you want to do this against a local testnet).
 * `ETH_RPC_URL`: your RPC node used to interact with the selected network. For this tutorial it will be easiest to do this against the Goerli fork by setting `ETH_RPC_URL=http://127.0.0.1:8545`
-* `MNEMONIC`: your passphrase used to derive private keys of deployer (index 0) and any other addresses interacting with the contracts. The simplest setup with this is to re-use the Anvil default unlocked accounts, if you are using the local testnet environment, you can have:
-  ```bash
-  export MNEMONIC="test test test test test test test test test test test junk"
-  ```
-* `FINDER_ADDRESS`: address of the [Finder](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/data-verification-mechanism/implementation/Finder.sol) contract used to locate other UMA ecosystem contracts (in order to resolve disputes you would need to use the one from a sandboxed environment). For Goerli, you can use:
-  ```bash
-  export FINDER_ADDRESS=0xE60dBa66B85E10E7Fd18a67a6859E241A243950e
-  ```
+*   `MNEMONIC`: your passphrase used to derive private keys of deployer (index 0) and any other addresses interacting with the contracts. The simplest setup with this is to re-use the Anvil default unlocked accounts, if you are using the local testnet environment, you can have:
+
+    ```bash
+    export MNEMONIC="test test test test test test test test test test test junk"
+    ```
+*   `FINDER_ADDRESS`: address of the [Finder](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/data-verification-mechanism/implementation/Finder.sol) contract used to locate other UMA ecosystem contracts (in order to resolve disputes you would need to use the one from a sandboxed environment). For Goerli, you can use:
+
+    ```bash
+    export FINDER_ADDRESS=0xE60dBa66B85E10E7Fd18a67a6859E241A243950e
+    ```
 
 Use `cast` command from Foundry to locate the address of Optimistic Oracle V3 and its default bonding token:
 
@@ -211,7 +213,7 @@ export ASSERTER_ID=1
 
 Make sure the user address above have sufficient funding for the gas to execute the transactions.
 
-Next, set up the bytes32 encoding for the `dataId` and `data`, as discussed in the [Asserting Data](#asserting-data) section. The `dataId` field will be the simplest command that can be re-produced by independent verifiers. We use `bc` (arbitrary-precision arithmetic language and calculator) that should be available on most operating systems:
+Next, set up the bytes32 encoding for the `dataId` and `data`, as discussed in the [Asserting Data](data-asserter.md#asserting-data) section. The `dataId` field will be the simplest command that can be re-produced by independent verifiers. We use `bc` (arbitrary-precision arithmetic language and calculator) that should be available on most operating systems:
 
 ```bash
 export DATA_ID=$(cast --format-bytes32-string "echo '69+420' | bc")

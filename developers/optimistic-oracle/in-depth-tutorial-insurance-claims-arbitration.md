@@ -2,7 +2,7 @@
 description: Using the Optimistic Oracle to allow for verification of insurance claims
 ---
 
-# 👨🏫 Insurance Claim Arbitration
+# Insurance Claim Arbitration
 
 This section covers the [insurance claims arbitration contract](https://github.com/UMAprotocol/dev-quickstart/blob/main/contracts/InsuranceArbitrator.sol), which is available in the [developer's quick-start repo](https://github.com/UMAprotocol/dev-quickstart). This tutorial shows an example of how insurance claims can be resolved and settled through the [Optimistic Oracle V2](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/optimistic-oracle-v2/implementation/OptimisticOracleV2.sol) contract.
 

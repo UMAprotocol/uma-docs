@@ -2,7 +2,7 @@
 description: Only required for testing the dispute flow
 ---
 
-# 🏖 Sandboxed Oracle Environment
+# Sandboxed Oracle Environment
 
 Whenever the assertion is disputed on a production network this triggers DVM request to be resolved by UMA voters. This might be impractical to fully simulate this in a testing environment, hence, developers can use [mocked oracle contract](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/data-verification-mechanism/test/MockOracleAncillary.sol) to resolve requests as they had been returned by DVM.
 

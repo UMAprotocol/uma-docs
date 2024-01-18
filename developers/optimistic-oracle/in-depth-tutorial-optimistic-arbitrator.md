@@ -2,7 +2,7 @@
 description: Wrapping Optimistic Oracle functionality into individual function calls
 ---
 
-# 🛠 Optimistic Arbitrator
+# Optimistic Arbitrator
 
 ### The Optimistic Arbitrator
 

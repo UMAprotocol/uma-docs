@@ -4,7 +4,7 @@ description: >-
   of the UMA Optimistic Oracle
 ---
 
-# 🎁 Deposit Box
+# Deposit Box
 
 #### UMA Contract Lifecycle
 

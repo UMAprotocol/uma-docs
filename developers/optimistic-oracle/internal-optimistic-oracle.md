@@ -4,7 +4,7 @@ description: >-
   through an external contract
 ---
 
-# ⛽ Internal Optimistic Oracle
+# Internal Optimistic Oracle
 
 ### The Internal Optimistic Oracle
 

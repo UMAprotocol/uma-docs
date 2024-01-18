@@ -4,7 +4,7 @@ description: >-
   functionality you could implement with custom escalation managers
 ---
 
-# ⚖ Escalation Managers
+# Escalation Managers
 
 ### Table of Contents <a href="#table-of-contents" id="table-of-contents"></a>
 
