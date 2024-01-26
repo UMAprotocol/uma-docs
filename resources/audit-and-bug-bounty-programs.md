@@ -30,17 +30,13 @@ All rewards will be paid in $UMA, and the amount of compensation will vary depen
 | Low      | $250                 |
 | Medium   | $3,000               |
 | High     | $10,000              |
-| Critical | 10% of funds at risk |
+| Critical | up to $1,000,000     |
 
 Severity is calculated according to the [OWASP](https://owasp.org/www-project-risk-assessment-framework/) risk rating model based on Impact and Likelihood.
 
 ![](../.gitbook/assets/severity.png)
 
-### Hats Vault <a href="#hats-vault" id="hats-vault"></a>
 
-UMA offers additional rewards through [Hats.finance](https://app.hats.finance/vaults), which pay out [UMA-backed protected tokens](https://medium.com/uma-project/uma-launches-hats-finance-vault-with-protected-tokens-2ad4587fcdf) for reports of smart contract vulnerabilities based on severity. Whitehat hackers are encouraged to submit smart contract vulnerabilities through Hats.finance in addition to e-mailing [bugs@umaproject.org](mailto:bugs@umaproject.org) to claim these rewards.
-
-Note that _only_ smart contract vulnerabilities are eligible for rewards from the Hats vault. Any vulnerability or bug reports not related to UMA or Across Protocol smart contracts, such as front-end or hosting configuration issues, will not receive rewards.
 
 ### Scope <a href="#scope" id="scope"></a>
 
@@ -48,9 +44,8 @@ The scope of our bug bounty program includes any and all of UMA's production sma
 
 #### In scope <a href="#in-scope" id="in-scope"></a>
 
-* All UMA smart contracts that are deployed to mainnet: [link](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/).
-  * Note: this does not include smart contracts that have not been deployed in a production capacity (test deployments for instance).
-* Bot code to support actively deployed smart contracts: [link](https://github.com/UMAprotocol/protocol/tree/master/packages/).
+* All UMA, Oval, or Across smart contracts that are deployed to mainnet or are otherwise noted as being applicable.
+* Bot or other offchain code to support deployed smart contracts.
 
 #### Examples of what’s in scope: <a href="#examples-of-whats-in-scope" id="examples-of-whats-in-scope"></a>
 
@@ -64,7 +59,7 @@ The scope of our bug bounty program includes any and all of UMA's production sma
 * Vulnerabilities in contracts built on top of the protocol by third-party developers (such as smart contract wallets)
 * Vulnerabilities that require ownership of an admin key
 * Any files, modules or libraries other than the ones mentioned above
-* More efficient gas solutions
+* More efficient gas solutions (although these suggestions are appreciated)
 * Any points listed as an already known weaknesses
 * Any points listed in an audit report
 
