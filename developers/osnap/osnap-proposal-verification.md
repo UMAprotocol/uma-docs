@@ -2,7 +2,7 @@
 description: oSnap Proposal Verification with UMA's Optimistic Oracle
 ---
 
-# ✅ oSnap Proposal Verification
+# oSnap Proposal Verification
 
 ## Verifying Proposals&#x20;
 

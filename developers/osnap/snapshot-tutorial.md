@@ -2,7 +2,7 @@
 description: Snapshot Space Set-up and Transaction Builder
 ---
 
-# ⚡ Snapshot Proposal + Transaction Tutorial
+# Snapshot Proposal + Transaction Tutorial
 
 Welcome to the Snapshot Proposal + Transaction Tutorial. This guide provides detailed, step-by-step instructions on how configure proposals and transactions in your Snapshot space using oSnap.&#x20;
 

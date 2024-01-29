@@ -2,7 +2,7 @@
 description: Get Started with oSnap in 2 Minutes
 ---
 
-# 🚀 oSnap Quick Start
+# oSnap Quick Start
 
 {% embed url="https://www.youtube.com/watch?v=tj_m6XMoPO4" %}
 oSnap Deployment Speed Run

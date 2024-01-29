@@ -1,4 +1,4 @@
-# 🎯 oSnap Deployment Tutorial
+# oSnap Deployment Tutorial
 
 Welcome to the oSnap Deployment Tutorial. In this tutorial, you'll find detailed, step-by-step instructions on deploying oSnap for fully decentralized governance.
 

@@ -4,7 +4,7 @@ description: >-
   Safe App.
 ---
 
-# 📦 Migrate to oSnap Safe App
+# Migrate to oSnap Safe App
 
 The most recent version of oSnap, also referred to as the oSnap Safe App, was launched on December 4, 2023. This new version enables smoother onboarding while maintaining the familiar user experience you already know.
 

@@ -2,10 +2,9 @@
 description: Using the Optimistic Oracle V3 to allow for verification of insurance claims.
 ---
 
-# 👨🏫 Insurance
+# Insurance
 
 This section covers the [Insurance contract](https://github.com/UMAprotocol/dev-quickstart-oov3/blob/master/src/Insurance.sol), which is available in the Optimistic Oracle V3 [quick-start repo](https://github.com/UMAprotocol/dev-quickstart-oov3). This tutorial shows an example of how insurance claims can be resolved and settled through the [Optimistic Oracle V3 (OOV3)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/optimistic-oracle-v3/implementation/OptimisticOracleV3.sol) contract.
-
 
 ### Insurance Contract
 
@@ -161,10 +160,11 @@ Before deploying and interacting with the contracts export the required environm
 * `ETHERSCAN_API_KEY`: your secret API key used for contract verification on Etherscan if deploying on a public network
 * `ETH_RPC_URL`: your RPC node used to interact with the selected network
 * `MNEMONIC`: your passphrase used to derive private keys of deployer (index 0) and any other addresses interacting with the contracts
-* `FINDER_ADDRESS`: address of the [Finder](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/data-verification-mechanism/implementation/Finder.sol) contract used to locate other UMA ecosystem contracts (in order to resolve disputes you would need to use the one from a sandboxed environment). For Goerli, you can use:
-  ```bash
-  export FINDER_ADDRESS=0xE60dBa66B85E10E7Fd18a67a6859E241A243950e
-  ```
+*   `FINDER_ADDRESS`: address of the [Finder](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/data-verification-mechanism/implementation/Finder.sol) contract used to locate other UMA ecosystem contracts (in order to resolve disputes you would need to use the one from a sandboxed environment). For Goerli, you can use:
+
+    ```bash
+    export FINDER_ADDRESS=0xE60dBa66B85E10E7Fd18a67a6859E241A243950e
+    ```
 * `DEFAULT_CURRENCY_ADDRESS`: address of the token used for insurance claim settlement. This is also used as oracle bonding currency, thus, needs to be added to whitelist either by UMA governance (production networks) or testnet administrator. On Goerli you can use [`0xe9448D94C9b033Ff50d3B14089043bD976fC1394`](https://goerli.etherscan.io/address/0xe9448d94c9b033ff50d3b14089043bd976fc1394) that is already whitelisted and can be minted by anyone using its `allocateTo` method
 
 Use `cast` command from Foundry to locate the address of Optimistic Oracle V3:
@@ -261,7 +261,7 @@ cast send --mnemonic "$MNEMONIC" --mnemonic-index $INSURED_ID \
 	$DEFAULT_CURRENCY_ADDRESS "approve(address,uint256)" $INSURANCE_ADDRESS $BOND_AMOUNT
 ```
 
-Now initiate the insurance claim and grab the resulting `assertionId` from the emitted `InsurancePayoutRequested` event (it should be the last emitted event and indexed `assertionId`  is at topic index `2`):
+Now initiate the insurance claim and grab the resulting `assertionId` from the emitted `InsurancePayoutRequested` event (it should be the last emitted event and indexed `assertionId` is at topic index `2`):
 
 ```bash
 export ASSERTION_TX=$(cast send --json \

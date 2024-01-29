@@ -2,7 +2,7 @@
 description: Overview of oSnap Configuration Parameters
 ---
 
-# 📏 oSnap Configuration Parameters
+# oSnap Configuration Parameters
 
 The parameters below are independent parameters on the oSnap module that can be updated after deployment in the SAFE advanced settings.&#x20;
 

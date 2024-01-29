@@ -47,6 +47,8 @@
 * [YES\_OR\_NO](verification-guide/yes\_or\_no.md)
 * [oSnap](verification-guide/osnap.md)
 * [Across](verification-guide/across.md)
+* [Y2K](verification-guide/y2k.md)
+* [Index](verification-guide/index.md)
 
 ## Resources
 
