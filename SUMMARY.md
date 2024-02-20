@@ -72,3 +72,4 @@
 * [Additional Resources](resources/additional-resources.md)
 * [Glossary](resources/glossary.md)
 * [Links](resources/links.md)
+* [UMA TVS Methodology](resources/uma-tvs-methodology.md)
