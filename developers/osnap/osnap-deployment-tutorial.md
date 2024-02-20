@@ -40,7 +40,7 @@ In your Snapshot space, click **'Settings'** then '**Advanced'** on the left sid
 
 Next, in the treasury container, click **'Add Treasury'**. Then, select the network, and enter the name and contract address of your Safe treasury.
 
-:exclamation:_Note: Make sure you have the **correct chain selected** or oSnap installation will not work. See supported networks_ [_here._](../../resources/network-addresses.md)
+:exclamation:_Note: Make sure you have the **correct chain selected** or oSnap installation will not work. See supported networks_ [_here._](../../resources/network-addresses/)
 
 <div align="center">
 

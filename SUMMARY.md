@@ -52,7 +52,8 @@
 
 ## Resources
 
-* [Network Information](resources/network-addresses.md)
+* [Network Information](resources/network-addresses/README.md)
+  * [New Network Requests](resources/network-addresses/new-network-requests.md)
 * [Audit & Bug Bounty Programs](resources/audit-and-bug-bounty-programs.md)
 * [Approved Price Identifiers](resources/approved-price-identifiers.md)
 * [Approved Collateral Types](resources/approved-collateral-types.md)

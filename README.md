@@ -18,4 +18,4 @@ UMA's oracle is used to create many other types of products and protocols. For i
 
 ## [Verification Guide](./#verification-guide)
 
-## [Resources](resources/network-addresses.md)
+## [Resources](resources/network-addresses/)
