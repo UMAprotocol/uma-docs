@@ -8,7 +8,7 @@ Please note that these requirements are subject to change as the EVM (Ethereum V
 
 **The below are a pre-requisite to any consideration:**
 
-* EVM-Compatible Network
+* EVM-Compatible Network a canonical token and message bridge to mainnet
 * ≥ 2 or more Independent RPC Node Providers (without block range limits for log queries)
 * 30-Day Moving Average TVL on the network > $75M
 * Block Explorer with Etherscan-Compatible API, contract verification and ABI fetching
