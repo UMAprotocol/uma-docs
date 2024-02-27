@@ -27,7 +27,25 @@ The oSnap transaction builder allows DAOs to add transactions when creating a Sn
 \
 The example proposal below proposes a funds transfer of 0.000005 ETH.
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-02-26 at 6.26.58 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+## Tenderly Transaction Simulation
+
+Before publishing your transaction, oSnap includes a built-in Tenderly simulation to simulate the transaction beforehand.
+
+First, build your transaction.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Then, click **simulate transaction**. This will simulate the transaction and return a **transaction passed** or **transaction failed** result.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+You can also view the results of the simulation in Tenderly.
+
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 ## Automatic Transaction Execution on Mainnets
 
@@ -53,7 +71,7 @@ After requesting execution, the Snapshot proposal displays the date and time whe
 
 After the challenge period has been completed, the Snapshot proposal gives the user the option to 'Execute transaction batch'. Signing this transaction will execute the transactions and return the bond to the requester.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 After executing our example proposal, the below shows the 0.000005 ETH transfer being executed.
 
