@@ -1,8 +1,8 @@
 ---
-description: How to verify YES_OR_NO_QUERY Proposals
+description: How to verify Polymarket Proposals
 ---
 
-# YES\_OR\_NO
+# Polymarket
 
 #### What is the YES\_OR\_NO\_QUERY?
 
