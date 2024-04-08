@@ -18,7 +18,7 @@ This getting started tutorial will show you how to go from 0 to 1 with the Optim
 
 You will be working through a simple smart contract that asks the oracle the question: `Q:Did the temperature on the 25th of July 2022 in Manhattan NY exceed 35c? A:1 for yes. 0 for no.`  After submitting the request, you will propose a solution using the UMA Optimistic Oracle UI.
 
-Once through liveness, you will fetch the price from the smart contract. This shows the full lifecycle of an Optimistic Oracle data request on the Görli testnet, interacting with an actual Optimistic Oracle contract deployment, without needing to write any code or clone any repos. It should give you the basic intuition as to how the Optimistic Oracle works without too much overhead and is a great starting point before digging deeper.  Let's get started!
+Once through liveness, you will fetch the price from the smart contract. This shows the full lifecycle of an Optimistic Oracle data request on the Sepolia testnet, interacting with an actual Optimistic Oracle contract deployment, without needing to write any code or clone any repos. It should give you the basic intuition as to how the Optimistic Oracle works without too much overhead and is a great starting point before digging deeper.  Let's get started!
 
 ### **Prerequisites**
 
@@ -50,7 +50,7 @@ What we've done in the above steps is: a) deploy a smart contract and b) submit 
 Now that we've asked the OO a question, it's time to propose a solution! The Optimistic Oracle works via an _interactive escalation game_ wherein a) requesters ask questions b) proposers provide solutions and c) disputers monitor the proposals and dispute if they are invalid. If no dispute is done then the proposal is taken as valid. In this example, we'll be acting as the proposer who will be answering the question we asked in the previous section
 
 1. Go to the Sepolia[ Optimistic Oracle UI](https://testnet.oracle.umaproject.org/) to see your request, which should be a `YES_OR_NO_QUERY` at the top of the index page. Click on the request to go to the details page.
-2. Click "Connect Wallet" and make sure you are connected to the Görli testnet so that you can make a proposal. You should see all the information posed in the data request: the requester, identifier, timestamp, ancillary data and a link to the UMIP.
+2. Click "Connect Wallet" and make sure you are connected to the Sepolia testnet so that you can make a proposal. You should see all the information posed in the data request: the requester, identifier, timestamp, ancillary data and a link to the UMIP.
 3. Submit your proposal (either `1` or `0`). The actual value you submit is not super important in this case since this is just for testing purposes, but the [correct response](https://www.wunderground.com/history/daily/us/ny/williston-park/KJFK/date/2022-7-25) is `0`. In doing this we are acting as the "proposer" providing a solution.
 
 Once you've provided an answer to the question the proposal enters into a liveness period of 30 seconds. During this time it's up to Disputers to verify the correctness of what the proposer provided.  Note that in a main net price request you'll normally set the liveness to much longer than 30 seconds (say two hours), the proposer will be bonded (if they propose wrong they lose money) and the proposer will be rewarded for providing a valid answer to the question.
