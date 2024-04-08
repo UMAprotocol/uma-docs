@@ -8,7 +8,9 @@ The primary integration point into the UMA ecosystem is the Optimistic Oracle (O
 
 This getting started tutorial will show you how to go from 0 to 1 with the Optimistic Oracle by executing the simplest possible request flow. Later in the docs you can find more information on [how the Optimistic Oracle works](../../protocol-overview/how-does-umas-oracle-work.md#optimistic-oracle) and dig deeper into its mechanism and [more sophisticated code examples](in-depth-tutorial-event-based-prediction-market.md).&#x20;
 
-**If you prefer, you can also watch the following video tutorial in which we follow the step-by-step instructions described below.**
+{% hint style="info" %}
+**If you prefer, you can also watch the following video tutorial in which we follow the step-by-step instructions described below. Please note, the Optimistic Oracle now supports Sepolia testnet.**
+{% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=tyi6PnlIHw8&t=26s" %}
 
@@ -24,7 +26,7 @@ To complete this tutorial you will need**:**
 
 1. Metamask installed in a Chromium based browser (such as [Google Chrome](https://www.google.com/chrome/)) If you don't have it already, you can get Metamask [here](https://metamask.io/).
 2. A wallet set up in Metamask.
-3. [Görli](https://goerli.net/) test ETH to send test transactions. You can get GETH from one of these faucets: [Telegram Authenticated](https://goerli-faucet.com/), [Twitter Authenticated](https://goerli-faucet.mudit.blog/), [Alchemy](https://goerlifaucet.com/), [slock.it](https://goerli-faucet.slock.it/).
+3. [Sepolia](https://sepolia.dev/) test ETH to send test transactions. You can get Sepolia ETH from one of these faucets: [Infura](https://www.infura.io/faucet/sepolia), [Alchemy,](https://www.alchemy.com/faucets/ethereum-sepolia) [PoW Faucet](https://sepolia-faucet.pk910.de/),  or [LearnWeb3](https://learnweb3.io/faucets/sepolia/),&#x20;
 
 ### Requesting data
 
@@ -35,7 +37,7 @@ The contract used in this tutorial is meant to be a simple data request flow. Th
 1. [Go to this example contract on Remix](https://remix.ethereum.org/#version=soljson-v0.8.16+commit.07a7930e.js\&optimize=false\&runs=200\&gist=fba5d2812d940759f4f7585741b529a4). This gives you the minimum data request and retrieval flow possible. We'll work through the code in the sections that follow.
 2. Click on "gist-fba..." to see the files in the gist, and click `OO_GettingStarted.sol` to open to Solidity file.
 3. In the far left hand menu, click the link to deploy and run transactions (which looks like the Ethereum logo and a right arrow).
-4. In the "Environment" dropdown, choose "Injected Provider," and connect to your wallet. **Make sure you are connected to Görli within your metamask wallet!** You don't want to deploy to a real network and spend real gas, and the Görli Optimistic Oracle address hardcoded into the contract will not work on other networks.
+4. In the "Environment" dropdown, choose "Injected Provider," and connect to your wallet. **Make sure you are connected to Sepolia within your Metamask wallet!** You don't want to deploy to a real network and spend real gas, and the Sepolia Optimistic Oracle address hardcoded into the contract will not work on other networks.
 5. Under the "Contract" dropdown, select `OO_GettingStarted`.
 6. Click "Deploy" and confirm the transaction with your wallet.
 7. You should now see the `OO_GettingStarted` contract under "Deployed Contracts". Clicking the dropdown carrot will reveal buttons for each of the functions in the contract.
@@ -47,7 +49,7 @@ What we've done in the above steps is: a) deploy a smart contract and b) submit 
 
 Now that we've asked the OO a question, it's time to propose a solution! The Optimistic Oracle works via an _interactive escalation game_ wherein a) requesters ask questions b) proposers provide solutions and c) disputers monitor the proposals and dispute if they are invalid. If no dispute is done then the proposal is taken as valid. In this example, we'll be acting as the proposer who will be answering the question we asked in the previous section
 
-1. Go to the [Görli Optimistic Oracle UI](https://testnet.oracle.umaproject.org/) to see your request, which should be a `YES_OR_NO_QUERY` at the top of the index page. Click on the request to go to the details page.
+1. Go to the Sepolia[ Optimistic Oracle UI](https://testnet.oracle.umaproject.org/) to see your request, which should be a `YES_OR_NO_QUERY` at the top of the index page. Click on the request to go to the details page.
 2. Click "Connect Wallet" and make sure you are connected to the Görli testnet so that you can make a proposal. You should see all the information posed in the data request: the requester, identifier, timestamp, ancillary data and a link to the UMIP.
 3. Submit your proposal (either `1` or `0`). The actual value you submit is not super important in this case since this is just for testing purposes, but the [correct response](https://www.wunderground.com/history/daily/us/ny/williston-park/KJFK/date/2022-7-25) is `0`. In doing this we are acting as the "proposer" providing a solution.
 
