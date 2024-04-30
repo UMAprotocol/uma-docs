@@ -9,7 +9,7 @@ Welcome to the oSnap documentation! This section showcases oSnap, which executes
 * [Snapshot tutorial ](snapshot-tutorial.md)to set-up your Snapshot space, configure, and execute transactions with Snapshot proposals
 * An overview on [verifying and disputing](osnap-proposal-verification.md) proposed transactions
 * Standard [oSnap Configuration Parameters](osnap-configuration-parameters.md)
-* Updating oSnap parameters using [admin functions](broken-reference)
+* Updating oSnap parameters using [osnap-configuration-parameters.md](osnap-configuration-parameters.md "mention")
 * How to setup an [oSnap Monitoring Bot](monitoring-bot-setup.md)
 
 Questions? Ready for next steps? [Chat with the team](https://uma.xyz/osnap?modal=try-osnap) for more info.
