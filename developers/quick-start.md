@@ -10,7 +10,7 @@ This getting started tutorial will show you how to go from 0 to 1 with the OOV3 
 
 ### **A minimum viable OOV3 integration**
 
-The OOV3 works by making a truth claim about the world, stating that something has happened or is true. Once asserted, the assertion enters a challenge period wherein someone can disagree with the assertion, by disputing it. If no one disputes it during the challenge window the statement is taken as true. If disputed, the outcome is arbitrated using the UMA DVM (more info on how this works here).&#x20;
+The OOV3 works by making a truth claim about the world, stating that something has happened or is true. Once asserted, the assertion enters a challenge period wherein someone can disagree with the assertion, by disputing it. If no one disputes it during the challenge window the statement is taken as true. If disputed, the outcome is arbitrated using the UMA DVM (more info on how this works [here](../protocol-overview/dvm-2.0)).&#x20;
 
 In this tutorial you will be working through a simple smart contract that asserts the following truth: `Statement: Argentina won the 2022 Fifa world cup in Qatar.`&#x20;
 
