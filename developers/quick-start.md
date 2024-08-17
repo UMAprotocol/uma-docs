@@ -22,7 +22,7 @@ To complete this tutorial you will need**:**
 
 1. Metamask installed in a Chromium based browser (such as [Google Chrome](https://www.google.com/chrome/)) If you don't have it already, you can get Metamask [here](https://metamask.io/).
 2. A wallet set up in Metamask.
-3. [Sepolia](https://sepolia.dev/) test ETH to send test transactions. You can get GETH from [Alchemy's faucet](https://www.alchemy.com/faucets/ethereum-sepolia).
+3. [Sepolia](https://sepolia.dev/) test ETH to send test transactions. You can get Sepolia ETH from [Alchemy's faucet](https://www.alchemy.com/faucets/ethereum-sepolia).
 
 ### Asserting a truth
 
