@@ -24,7 +24,7 @@ To make an assertion, a proposer must post a 10,000 USDC bond, which they will g
 
 If the disputer wins, they receive 15,000 USDC (10,000 USDC disputer bond + 5,000 USDC from the excess proposer bond) and the `Store` receives 5,000 USDC.
 
-If the proposer wins, they receive 15,000 USDC (10,000 USDC proposer bond + 5,000 USDC from the disputer bond) and the `Store` receives 5,000 USDC (half of the proposer bond).
+If the proposer wins, they receive 15,000 USDC (10,000 USDC proposer bond + 5,000 USDC from the disputer bond) and the `Store` receives 5,000 USDC (half of the disputer bond).
 
 #### Higher or lower bonds?
 
