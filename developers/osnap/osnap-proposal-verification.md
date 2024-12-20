@@ -16,6 +16,13 @@ The explanation includes an IPFS hash that is a unique identifier for the Snapsh
 
 <figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
+## oSnap Proposal Pass Criteria
+
+An oSnap proposal's voting results must meet both criteria below to be considered passed:
+
+1. Quorum: FOR + AGAINST + ABSTAIN ≥ Required Quorum
+2. 'FOR' majority: FOR > 50% \* (FOR + AGAINST + ABSTAIN)
+
 ## Disputing Proposals&#x20;
 
 If the oSnap request does not meet the Rules, it should be disputed. Disputed requests can not be executed no matter how UMA resolves the dispute. This [section](../../using-uma/disputing-oracle-data.md) outlines the steps to dispute an invalid oSnap request, or any other invalid assertions to UMA's Optimistic Oracle.
