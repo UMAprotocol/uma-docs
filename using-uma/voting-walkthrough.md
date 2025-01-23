@@ -42,8 +42,4 @@ Withdraw cooldown period: 7 days
 
 Emission rewards begin to accrue automatically when you stake $UMA. You may claim these rewards to your wallet, or claim-and-stake to your staked balance.&#x20;
 
-Rewards associated with voting successfully are automatically added to your staked balance after the voting period ends.
-
-### Gas Rebates
-
-Risk Labs currently provides gas rebates for voting to encourage all UMA community members to participate in securing the Optimistic Oracle. Rebates cover gas costs to commit and reveal votes to the DVM and are denominated in ETH. If a delegate address is used to vote, the rebate will be sent to the delegate address. Rebates are calculated for one calendar month and are sent out within the first half of the following month. Announcements are made in the UMA Discord at the time each rebate is sent out.\
+Rewards associated with voting successfully are automatically added to your staked balance after the voting period ends.\

@@ -37,6 +37,7 @@
 ## Using UMA
 
 * [Voting Walkthrough](using-uma/voting-walkthrough.md)
+* [Voting Gas Rebates](using-uma/voting-gas-rebates.md)
 * [Proposing Oracle Data](using-uma/providing-oracle-data.md)
 * [Disputing Oracle Data](using-uma/disputing-oracle-data.md)
 * [Resolving Disputes](using-uma/resolving-disputes.md)
@@ -44,7 +45,7 @@
 ## Verification Guide
 
 * [Verification System](verification-guide/verification-system.md)
-* [Polymarket](verification-guide/yes\_or\_no.md)
+* [Polymarket](verification-guide/yes_or_no.md)
 * [oSnap](verification-guide/osnap.md)
 * [Across](verification-guide/across.md)
 * [Y2K](verification-guide/y2k.md)
