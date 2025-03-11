@@ -22,9 +22,7 @@ Maximizing your APY should be simple. To maximize APY you should:
 
 ### What is the current UMA voter rewards emission rate?
 
-During the initial DVM 2.0 upgrade, this was set to zero. There will soon be a proposal to set the UMA emissions rate to 0.18 UMA/second. This will be distributed pro-rata to all stakers within the UMA system on a per second basis. This amounts to approximately 5.67 million new UMA per year being minted.
-
-The UMA emissions rate is controlled by UMA governance and can be updated at any time by a DVM vote.
+The UMA emission rate is currently 0.155 UMA/second. This will be distributed pro-rata to all stakers within the UMA system on a per second basis. The UMA emissions rate is controlled by UMA governance and can be updated at any time by a DVM vote.
 
 ### What is the unstake timer? Why does this exist?
 
