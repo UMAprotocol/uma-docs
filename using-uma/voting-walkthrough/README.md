@@ -21,7 +21,7 @@ The purpose behind using the [Commit/Reveal scheme](https://www.gitcoin.co/blog/
    * You will be able to vote with those tokens
    * You will have a 7-day cooldown period in order to unstake those tokens. During that period, your tokens will not be earning any rewards or be eligible for voting.
 
-<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Indicate that you understand the cooldown period, approve, then stake your $UMA</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Indicate that you understand the cooldown period, approve, then stake your $UMA</p></figcaption></figure>
 
 4. You can only vote when there is a live vote(s), and during the **Commit period.**&#x20;
 5. Choose your vote(s) from the dropdown menu, then click "Commit vote" and send the transaction.&#x20;

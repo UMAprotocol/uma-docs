@@ -18,7 +18,7 @@ Once through the challenge window, you will use the assertion in your resolution
 
 ### **Prerequisites**
 
-To complete this tutorial you will need**:**
+To complete this tutorial you will nee&#x64;**:**
 
 1. Metamask installed in a Chromium based browser (such as [Google Chrome](https://www.google.com/chrome/)) If you don't have it already, you can get Metamask [here](https://metamask.io/).
 2. A wallet set up in Metamask.
@@ -30,7 +30,7 @@ First, we will work through the basic flow for _asserting a truth to the oracle_
 
 The contract used in this tutorial is meant to be a simple data assertion flow. The contract exposes a simple `assertTruth` function which asserts the truth to the OA about the outcome of the world cup.
 
-1. [Go to this example contract on Remix](https://remix.ethereum.org/#activate=solidity,fileManager\&version=soljson-v0.8.16+commit.07a7930e.js\&optimize=false\&runs=200\&gist=17a8a29b2f8ae432e8bac0b88cff8bb1\&call=fileManager//open//gist-17a8a29b2f8ae432e8bac0b88cff8bb1/OOV3\_GettingStarted.sol). This gives you the minimum assertion flow. Read the contract and the comments listed within.
+1. [Go to this example contract on Remix](https://remix.ethereum.org/#activate=solidity,fileManager\&version=soljson-v0.8.16+commit.07a7930e.js\&optimize=false\&runs=200\&gist=17a8a29b2f8ae432e8bac0b88cff8bb1\&call=fileManager//open//gist-17a8a29b2f8ae432e8bac0b88cff8bb1/OOV3_GettingStarted.sol). This gives you the minimum assertion flow. Read the contract and the comments listed within.
 2. In the far left hand menu, click the link to deploy and run transactions (which looks like the Ethereum logo and a right arrow).
 3. In the "Environment" dropdown, choose "Injected Provider," and connect to your wallet. **Make sure you are connected to Görli within your metamask wallet, that has Görli test ETH!** You don't want to deploy to a real network and spend real gas, and the Görli Optimistic Oracle address hardcoded into the contract will not work on other networks.
 4. Under the "Contract" dropdown, select `OOV3_GettingStarted`.

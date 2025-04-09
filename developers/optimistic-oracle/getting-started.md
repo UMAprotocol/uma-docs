@@ -22,7 +22,7 @@ Once through liveness, you will fetch the price from the smart contract. This sh
 
 ### **Prerequisites**
 
-To complete this tutorial you will need**:**
+To complete this tutorial you will nee&#x64;**:**
 
 1. Metamask installed in a Chromium based browser (such as [Google Chrome](https://www.google.com/chrome/)) If you don't have it already, you can get Metamask [here](https://metamask.io/).
 2. A wallet set up in Metamask.
