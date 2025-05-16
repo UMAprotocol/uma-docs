@@ -1,5 +1,6 @@
 ---
 description: Using the Optimistic Oracle V3 to allow for verification of insurance claims.
+hidden: true
 ---
 
 # Insurance

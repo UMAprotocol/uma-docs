@@ -2,6 +2,7 @@
 description: >-
   Using the Optimistic Oracle to verify arbitrary data type results proposed
   through an external contract
+hidden: true
 ---
 
 # Internal Optimistic Oracle

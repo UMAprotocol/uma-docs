@@ -1,5 +1,6 @@
 ---
 description: Wrapping Optimistic Oracle functionality into individual function calls
+hidden: true
 ---
 
 # Optimistic Arbitrator
@@ -152,7 +153,7 @@ All the unit tests covering the functionality described above are available [her
 yarn test test/OptimisticArbitrator/*
 ```
 
-Before deploying the contract check the comments on available environment variables in [the deployment script](https://github.com/UMAprotocol/dev-quickstart/blob/main/deploy/004\_deploy\_optimistic\_arbitrator.ts).
+Before deploying the contract check the comments on available environment variables in [the deployment script](https://github.com/UMAprotocol/dev-quickstart/blob/main/deploy/004_deploy_optimistic_arbitrator.ts).
 
 In the case of the Görli testnet, the defaults would use the Finder instance that references the [Mock Oracle](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/data-verification-mechanism/test/MockOracleAncillary.sol) implementation for resolving DVM requests. This exposes a `pushPrice` method to be used for simulating a resolved answer in case of disputed proposals. Also, the default Görli deployment would use the already whitelisted `TestnetERC20` currency that can be minted by anyone using its `allocateTo` method.
 

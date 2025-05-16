@@ -37,11 +37,11 @@ Before publishing your transaction, oSnap includes a built-in Tenderly simulatio
 
 First, build your transaction.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, click **simulate transaction**. This will simulate the transaction and return a **transaction passed** or **transaction failed** result.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can also view the results of the simulation in Tenderly.
 

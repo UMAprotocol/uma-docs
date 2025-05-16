@@ -2,6 +2,7 @@
 description: >-
   Building a prediction market that uses the UMA Optimistic Oracle V3 for
   settlement and event identification
+hidden: true
 ---
 
 # Prediction Market

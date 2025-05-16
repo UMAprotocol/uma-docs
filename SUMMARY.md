@@ -1,11 +1,19 @@
 # Table of contents
 
-* [UMA Protocol](README.md)
+* [Welcome to UMA](README.md)
+* [What's New!](whats-new.md)
 
 ## Developers
 
-* [Quick start](developers/quick-start.md)
-* [Optimistic Oracle](developers/optimistic-oracle-v3/README.md)
+* [Optimistic Oracle v2](developers/optimistic-oracle/README.md)
+  * [Quick Start](developers/optimistic-oracle/getting-started.md)
+  * [Deposit Box](developers/optimistic-oracle/solidity-examples.md)
+  * [Event-Based Prediction Market](developers/optimistic-oracle/in-depth-tutorial-event-based-prediction-market.md)
+  * [Insurance Claim Arbitration](developers/optimistic-oracle/in-depth-tutorial-insurance-claims-arbitration.md)
+  * [Internal Optimistic Oracle](developers/optimistic-oracle/internal-optimistic-oracle.md)
+  * [Optimistic Arbitrator](developers/optimistic-oracle/in-depth-tutorial-optimistic-arbitrator.md)
+* [Optimistic Oracle v3](developers/optimistic-oracle-v3/README.md)
+  * [Quick start](developers/optimistic-oracle-v3/quick-start.md)
   * [Prediction Market](developers/optimistic-oracle-v3/prediction-market.md)
   * [Insurance](developers/optimistic-oracle-v3/in-depth-tutorial-insurance.md)
   * [Data Asserter](developers/optimistic-oracle-v3/data-asserter.md)
@@ -47,8 +55,8 @@
 
 * [Verification System](verification-guide/verification-system.md)
 * [Polymarket](verification-guide/yes_or_no.md)
-* [oSnap](verification-guide/osnap.md)
 * [Across](verification-guide/across.md)
+* [oSnap](verification-guide/osnap.md)
 * [Y2K](verification-guide/y2k.md)
 * [Index](verification-guide/index.md)
 
@@ -62,13 +70,6 @@
 * [Subgraphs](resources/subgraphs/subgraph-data.md)
   * [Mainnet Voting Entities](resources/subgraphs/mainnet-voting-entities.md)
   * [Queries](resources/subgraphs/queries.md)
-* [Optimistic Oracle v2](developers/optimistic-oracle/README.md)
-  * [OO Quick Start](developers/optimistic-oracle/getting-started.md)
-  * [Deposit Box](developers/optimistic-oracle/solidity-examples.md)
-  * [Internal Optimistic Oracle](developers/optimistic-oracle/internal-optimistic-oracle.md)
-  * [Insurance Claim Arbitration](developers/optimistic-oracle/in-depth-tutorial-insurance-claims-arbitration.md)
-  * [Optimistic Arbitrator](developers/optimistic-oracle/in-depth-tutorial-optimistic-arbitrator.md)
-  * [Event-Based Prediction Market](developers/optimistic-oracle/in-depth-tutorial-event-based-prediction-market.md)
 * [Voting with a 2-Key Contract](resources/voting-with-a-2-key-contract.md)
 * [Unsupported Contracts](resources/unsupported-contracts.md)
 * [Additional Resources](resources/additional-resources.md)

@@ -1,6 +1,6 @@
 ---
 description: >-
-  Using the full policy escalation manager as an example for modular 
+  Using the full policy escalation manager as an example for modular
   functionality you could implement with custom escalation managers
 ---
 
