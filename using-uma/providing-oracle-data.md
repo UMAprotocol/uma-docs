@@ -6,7 +6,7 @@ This tutorial describes how to propose answers to data requests. The data could 
 
 **Step 2:** Locate requests under the Requests tab for outstanding requests.
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (2).png>)
 
 **Step 3:** Click on the request you are interested in proposing data for.
 
@@ -14,7 +14,7 @@ This tutorial describes how to propose answers to data requests. The data could 
 
 **Step 4:** Click the 'Connect wallet' button in the top right corner and go through the steps to connect your wallet. Confirm you are on the same network as the data request.
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (1).png>)
 
 **Step 5:** Before proposing, confirm the details of the request and ancillary data to ensure you are proposing accurate data. You may also want to check the instructions in the [UMIP](https://docs.umaproject.org/resources/approved-price-identifiers) for the identifier.
 

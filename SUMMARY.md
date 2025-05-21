@@ -2,6 +2,7 @@
 
 * [Welcome to UMA](README.md)
 * [What's New!](whats-new.md)
+* [FAQs](faqs.md)
 
 ## Developers
 
