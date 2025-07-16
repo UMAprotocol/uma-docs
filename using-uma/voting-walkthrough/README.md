@@ -34,7 +34,7 @@ Once the dapp shows your vote as "Revealed," you are done with the voting proces
 
 Emissions: .18 $UMA/second
 
-Missed vote penalty: .05% of staked balance
+Missed vote penalty: 0.1% of staked balance
 
 Withdraw cooldown period: 7 days
 
