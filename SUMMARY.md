@@ -16,7 +16,7 @@
 * [ManagedOptimisticOracleV2](developers/managedoptimisticoraclev2/README.md)
   * [Proposing via the Oracle Dapp](developers/managedoptimisticoraclev2/proposing-via-the-oracle-dapp.md)
   * [Proposing Programmatically](developers/managedoptimisticoraclev2/proposing-programmatically.md)
-  * [Default Whitelist](developers/managedoptimisticoraclev2/default-whitelist.md)
+  * [Default Proposer Whitelist](developers/managedoptimisticoraclev2/default-proposer-whitelist.md)
 * [Optimistic Oracle v3](developers/optimistic-oracle-v3/README.md)
   * [Quick start](developers/optimistic-oracle-v3/quick-start.md)
   * [Prediction Market](developers/optimistic-oracle-v3/prediction-market.md)
