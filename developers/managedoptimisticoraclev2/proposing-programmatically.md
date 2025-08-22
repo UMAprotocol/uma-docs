@@ -23,4 +23,4 @@ Proposing on ManagedOptimisticOracleV2 can be done by calling the same [`propose
 
 #### Listening for ManagedOptimisticOracleV2 Events
 
-The emitted events that are relevant to oracle participants (`RequestPrice, ProposePrice and DisputePrice, SettlePrice`) are unchanged from the OptimisticOracleV2 contract. These events can be queried via RPCs or by using our [deployed subgraph](https://github.com/UMAprotocol/subgraphs/blob/master/README.md#managed-optimistic-oracle-v2-events-and-calls) that indexes ManagedOptimisticOracleV2 events.
+The emitted events that are relevant to oracle participants (`RequestPrice, ProposePrice and DisputePrice, SettlePrice`) are unchanged from the OptimisticOracleV2 contract. These events can be queried via RPCs or by using our [subgraph](https://github.com/UMAprotocol/subgraphs/blob/master/README.md#managed-optimistic-oracle-v2-events-and-calls) that indexes ManagedOptimisticOracleV2 events.
