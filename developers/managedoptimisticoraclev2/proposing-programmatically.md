@@ -20,3 +20,7 @@ When a new request is created on ManagedOptimisticOracleV2 it will default to th
 #### Proposing on ManagedOptimisticOracleV2
 
 Proposing on ManagedOptimisticOracleV2 can be done by calling the same [`proposePrice`](https://github.com/UMAprotocol/managed-oracle/blob/fc03083eca91c880efa8918c6d9532af9362f00d/src/optimistic-oracle-v2/implementation/OptimisticOracleV2.sol#L382) or [`proposePriceFor`](https://github.com/UMAprotocol/managed-oracle/blob/fc03083eca91c880efa8918c6d9532af9362f00d/src/optimistic-oracle-v2/implementation/ManagedOptimisticOracleV2.sol#L327)  functions with the same arguments  as proposing on OptimisticOracleV2. Proposal transactions from addresses that are not whitelisted will revert with the following error messages, `"Sender not whitelisted"` or, `"Proposer not whitelisted"`.
+
+#### Listening for ManagedOptimisticOracleV2 Events
+
+The emitted events that are relevant to oracle participants (`RequestPrice, ProposePrice and DisputePrice, SettlePrice`) are unchanged from the OptimisticOracleV2 contract. These events can be queried via RPCs or by using our [deployed subgraph](https://github.com/UMAprotocol/subgraphs/blob/master/README.md#managed-optimistic-oracle-v2-events-and-calls) that indexes ManagedOptimisticOracleV2 events.
