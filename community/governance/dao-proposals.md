@@ -10,7 +10,7 @@ An example submission is [Polymarket's Liquidity Mining Program](https://discour
 
 **Step 2: Snapshot Vote**
 
-When the proposal appears ready, a Snapshot vote can be created by the proposer with a 5 day close. Should it receive majority support at the end of 5 days, it will then pass to snapshot for an indicative vote prior to being put to an on-chain vote.
+When the proposal appears ready, a Discourse poll can be created by the proposer with a 5 day close. Should it receive majority support at the end of 5 days, it will then pass to snapshot for an indicative vote prior to being put to an on-chain vote.
 
 Proposals that require movement of treasury funds require a 4,000 UMA bond to be posted which is returned if the proposal is successful in an on-chain vote of tokenholders.
 
