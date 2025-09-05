@@ -4,6 +4,6 @@ description: LLM generated Discord discussion summaries warnings and information
 
 # Discord Summaries
 
-The Voterdapp contains a useful helper tab "Discussion Summary" which contains a summary of Discord comments posted to the evidence rational channel. The summary system tries to best represent all view points presented in the discord comments, while removing noise and condensing duplication. The system leverages batched summaries to minimize the impact of context rot when processing many comments.
+The Voterdapp contains a "Discussion Summary" tab with an LLM summary of Discord comments on the vote. The summary removes duplicate arguments across all comments to give voters an overview of all arguments which is useful for long or spammed comment threads. The summary does not fact check comments, add additional arguments, or give voting recommendations.&#x20;
 
-The summarized arguments are meant to make the voting process easier and quicker, but there is still risk that the model makes a mistake or misses a comment. **Users should verify against the actual discord comments to protect against this.**
+Voters should always verify all arguments included in the summaries with their own research. The raw comments are also provided in the "Discord Comments" tab so voters can review them against the summary in case of LLM error.
