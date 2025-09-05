@@ -52,6 +52,7 @@
 * [Voting Walkthrough](using-uma/voting-walkthrough/README.md)
   * [Voter Guide](using-uma/voting-walkthrough/voter-guide.md)
   * [Voting Gas Rebates](using-uma/voting-walkthrough/voting-gas-rebates.md)
+  * [Discord Summaries](using-uma/voting-walkthrough/discord-summaries.md)
 * [Proposing Oracle Data](using-uma/providing-oracle-data.md)
 * [Disputing Oracle Data](using-uma/disputing-oracle-data.md)
 * [Resolving Disputes](using-uma/resolving-disputes.md)
