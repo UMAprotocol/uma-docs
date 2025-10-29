@@ -34,6 +34,7 @@
   * [oSnap Configuration Parameters](developers/osnap/osnap-configuration-parameters.md)
   * [Migrate to oSnap Safe App](developers/osnap/osnap-configuration-parameters-1.md)
   * [Monitoring Bot Setup](developers/osnap/monitoring-bot-setup.md)
+  * [Disabling oSnap](developers/osnap/disabling-osnap.md)
 * [Setting Custom Bond and Liveness Parameters](developers/setting-custom-bond-and-liveness-parameters.md)
 
 ## Protocol Overview

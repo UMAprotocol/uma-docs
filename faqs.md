@@ -71,7 +71,7 @@ insurance, gaming, and much more.
 
 UMA’s [optimistic oracle (OO)](https://blog.uma.xyz/articles/what-is-umas-optimistic-oracle) is a decentralized verification protocol that lets anyone propose data onchain. If no one disputes the data within a predefined liveness period, it's considered verified. If disputed, the claim goes to a community vote via the DVM.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -117,7 +117,7 @@ Yes, UMA is designed to be trustless. The economic game theory ensures that data
 
 [oSnap](https://docs.uma.xyz/developers/osnap) is UMA’s governance automation tool. It connects Snapshot votes with onchain execution, letting DAOs run offchain votes and trustlessly execute them onchain with UMA’s OO securing the results. Notable users include Across, Developer DAO, Nexus Mutual, and many more.
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -157,7 +157,7 @@ Any peice of information that can be verified with public evidence or consensus:
 
 Use the [UMA OO dApp](https://oracle.uma.xyz/propose) to submit data to the OO. Under the “Propose” tab, you can view the full list of live queries and choose which one you want to propose an answer to. You’ll need to post a bond and specify details for the request. If undisputed during the liveness window, the data is finalized and published onchain.
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -193,7 +193,7 @@ Yes. Bots can be written to monitor for proposals based on predefined logic. UMA
 
 Submit a dispute through the [UMA OO dApp](https://oracle.uma.xyz/) within the liveness period. Under the “Verify” tab, you can view the full list of live proposals currently in their challenge period and choose which one you want to dispute. You'll need to post a bond and the request will escalate to the DVM for resolution.
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -229,7 +229,7 @@ Yes. Bots can be written to monitor for proposals and auto-dispute based on pred
 
 To vote on disputes and earn rewards, you must stake $UMA in the [UMA Voter dApp](https://vote.uma.xyz/). From there, you can commit and reveal your votes. You cal also view upcoming votes, your $UMA rewards, and voting history.
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -319,7 +319,7 @@ Always make sure to check the proposal timestamp and take it into consideration 
 
 _Learn more about P4_ [_here_](https://blog.uma.xyz/articles/what-is-p4)_._
 
-<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
