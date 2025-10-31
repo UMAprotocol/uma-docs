@@ -1,9 +1,9 @@
 # Voting Gas Rebates
 
-Risk Labs currently provides gas rebates for voters who have staked 500 or more UMA to encourage more community members to participate in securing the Optimistic Oracle.&#x20;
+Risk Labs currently provides gas rebates for voters who have staked 1000 or more UMA to encourage more community members to participate in securing the Optimistic Oracle.&#x20;
 
 * Rebates cover the gas cost for commit and reveal transactions and are denominated in ETH.
-* Voters must have at least 500 UMA staked at the start of the commit period for that voting period's commit and reveal transactions to be rebated.
+* Voters must have at least 1000 UMA staked at the start of the commit period for that voting period's commit and reveal transactions to be rebated.
 * Commited votes must be revealed to be rebated.
 * If a voter commits more than once on a dispute, only the first commit will be rebated.
 * If a delegate address is used to vote, the rebate will be sent to the delegate address.
