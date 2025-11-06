@@ -240,7 +240,7 @@ To vote on disputes and earn rewards, you must stake $UMA in the [UMA Voter dApp
 There is no minimum. Your influence is proportional to the amount of tokens staked, but participation is open and inclusive.
 
 {% hint style="info" %}
-You need to stake a minimum of 500 $UMA to receive voting gas rebates.
+You need to stake a minimum of 1000 $UMA to receive voting gas rebates.
 {% endhint %}
 
 </details>
@@ -327,7 +327,7 @@ _Learn more about P4_ [_here_](https://blog.uma.xyz/articles/what-is-p4)_._
 
 <summary><strong>Voting gas is expensive. Do I get a refund?</strong></summary>
 
-Yes! As long as you are staking a minimum of 500 $UMA, you will receive an ETH gas rebate at the end of each month paid in full, gwei for gwei. See more details [here](https://docs.uma.xyz/using-uma/voting-walkthrough/voting-gas-rebates).
+Yes! As long as you are staking a minimum of 1000 $UMA, you will receive an ETH gas rebate at the end of each month paid in full, gwei for gwei. See more details [here](https://docs.uma.xyz/using-uma/voting-walkthrough/voting-gas-rebates).
 
 </details>
 
