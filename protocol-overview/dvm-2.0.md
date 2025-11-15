@@ -74,7 +74,7 @@ Under some situations votes can "roll". We define a rolled vote as a vote that w
 
 The GAT within the DVM 2.0 is a constant amount of UMA that must vote on any given vote for it to not roll. In the DVM 1.0, this was set as a percentage of circulating UMA. At the time of DVM 2.0 initial deployment, the required GAT per vote is a constant 5 million UMA.
 
-The SPAT is a new concept from the DVM 2.0. It is a percentage of staked tokens that must vote and agree in order for a vote to not roll. At the time of DVM 2.0 initial deployment, the required SPAT is 50% of staked tokens.
+The SPAT is a new concept from the DVM 2.0. It is a percentage of staked tokens that must vote and agree in order for a vote to not roll. At the time of DVM 2.0 initial deployment, the required SPAT was 50% of staked tokens but this was increased to 65% by UMIP-186.
 
 If a vote does not satisfy both of these constraints, it will roll.&#x20;
 
