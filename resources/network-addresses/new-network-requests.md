@@ -17,15 +17,6 @@ Please note that these requirements are subject to change as the EVM (Ethereum V
 * Subgraph support for testnet and mainnet
 * Wallet connector libraries support for  testnet and mainnet
 
-**Additional Criteria for oSnap Support:**
-
-* Snapshot network support for testnet and mainnet
-* SAFE App support for testnet and mainnet&#x20;
-  * _Requires app opener with deep linking and transaction service_
-* Zodiac support for testnet and mainnet&#x20;
-* Support for [Covalent service](https://www.covalenthq.com/docs/networks/)&#x20;
-  * _Required for balance fetching in transaction builder_
-
 ### Get in Touch with UMA
 
 * Drop a message in the [UMA Discord Server ](https://discord.com/invite/jsb9XQJ)

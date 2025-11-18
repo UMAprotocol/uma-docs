@@ -66,8 +66,6 @@
 * [Polymarket](verification-guide/yes_or_no.md)
 * [Across](verification-guide/across.md)
 * [oSnap](verification-guide/osnap.md)
-* [Y2K](verification-guide/y2k.md)
-* [Index](verification-guide/index.md)
 
 ## Resources
 
@@ -84,4 +82,3 @@
 * [Additional Resources](resources/additional-resources.md)
 * [Glossary](resources/glossary.md)
 * [Links](resources/links.md)
-* [UMA TVS Methodology](resources/uma-tvs-methodology.md)
