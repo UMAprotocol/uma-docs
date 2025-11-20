@@ -304,4 +304,4 @@ const resultRatify = await optimisticArbitrator.connect(signer).getResult(reques
 console.log("Assert and ratify result is a yes answer :", resultRatify.eq(YES_ANSWER));
 ```
 
-\
+<br>

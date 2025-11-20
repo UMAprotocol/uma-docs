@@ -42,4 +42,4 @@ Withdraw cooldown period: 7 days
 
 Emission rewards begin to accrue automatically when you stake $UMA. You may claim these rewards to your wallet, or claim-and-stake to your staked balance.&#x20;
 
-Rewards associated with voting successfully are automatically added to your staked balance after the voting period ends.\
+Rewards associated with voting successfully are automatically added to your staked balance after the voting period ends.<br>

@@ -10,6 +10,5 @@ For a complete list of all current integrations see: [projects.uma.xyz](https://
 
 ### &#x20;<a href="#developers" id="developers"></a>
 
-\
-
+<br>
 

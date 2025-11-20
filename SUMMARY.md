@@ -27,14 +27,8 @@
   * [Escalation Managers](developers/optimistic-oracle-v3/escalation-managers.md)
   * [Sandboxed Oracle Environment](developers/optimistic-oracle/sandboxed-oracle-environment.md)
 * [oSnap](developers/osnap/README.md)
-  * [oSnap Quick Start](developers/osnap/osnap-quick-start.md)
-  * [oSnap Deployment Tutorial](developers/osnap/osnap-deployment-tutorial.md)
-  * [Snapshot Proposal + Transaction Tutorial](developers/osnap/snapshot-tutorial.md)
-  * [oSnap Proposal Verification](developers/osnap/osnap-proposal-verification.md)
-  * [oSnap Configuration Parameters](developers/osnap/osnap-configuration-parameters.md)
-  * [Migrate to oSnap Safe App](developers/osnap/osnap-configuration-parameters-1.md)
-  * [Monitoring Bot Setup](developers/osnap/monitoring-bot-setup.md)
   * [Disabling oSnap](developers/osnap/disabling-osnap.md)
+  * [oSnap Proposal Verification](developers/osnap/osnap-proposal-verification.md)
 * [Setting Custom Bond and Liveness Parameters](developers/setting-custom-bond-and-liveness-parameters.md)
 
 ## Protocol Overview
