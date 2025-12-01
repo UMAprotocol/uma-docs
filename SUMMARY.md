@@ -7,8 +7,8 @@
 ## Developers
 
 * [Optimistic Oracle v2](developers/optimistic-oracle/README.md)
-  * [Quick Start](developers/optimistic-oracle/getting-started.md)
   * [Using Blacklisting Tokens as Currency](developers/optimistic-oracle/using-blacklisting-tokens-as-currency.md)
+  * [Quick Start](developers/optimistic-oracle/getting-started.md)
   * [Deposit Box](developers/optimistic-oracle/solidity-examples.md)
   * [Event-Based Prediction Market](developers/optimistic-oracle/in-depth-tutorial-event-based-prediction-market.md)
   * [Insurance Claim Arbitration](developers/optimistic-oracle/in-depth-tutorial-insurance-claims-arbitration.md)
@@ -19,8 +19,9 @@
   * [Proposing Programmatically](developers/managedoptimisticoraclev2/proposing-programmatically.md)
   * [Default Proposer Whitelist](developers/managedoptimisticoraclev2/default-proposer-whitelist.md)
 * [Optimistic Oracle v3](developers/optimistic-oracle-v3/README.md)
-  * [Quick start](developers/optimistic-oracle-v3/quick-start.md)
+  * [ASSERT\_TRUTH Deprecation](developers/optimistic-oracle-v3/assert_truth-deprecation.md)
   * [Using Blacklisting Tokens as Currency](developers/optimistic-oracle-v3/using-blacklisting-tokens-as-currency.md)
+  * [Quick start](developers/optimistic-oracle-v3/quick-start.md)
   * [Prediction Market](developers/optimistic-oracle-v3/prediction-market.md)
   * [Insurance](developers/optimistic-oracle-v3/in-depth-tutorial-insurance.md)
   * [Data Asserter](developers/optimistic-oracle-v3/data-asserter.md)
