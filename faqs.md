@@ -408,7 +408,7 @@ UMA is currently deployed and fully supported (including Oracle UI, DVM support,
 * Core Mainnet
 * Story Mainnet
 
-For the most up-to-date list of supported networks, including testnets and partially supported chains, you can find UMA's [network information here](broken-reference).
+For the most up-to-date list of supported networks, including testnets and partially supported chains, you can find UMA's [network information here](/broken/pages/CGYkRbOnhJ483urKrE2v).
 
 </details>
 
@@ -478,7 +478,7 @@ UMA’s security comes from game theory, not just code. The protocol is designed
 
 At the core of this is UMA’s use of the **Schelling Point principle**: rational voters, acting independently, are incentivized to report the truth because they know others will too. Those who vote correctly earn rewards. Those who vote incorrectly or don’t vote at all are penalized via slashing.
 
-For an attacker to corrupt UMA’s oracle, they’d need to acquire **51% of all UMA tokens**, then convince a majority of that voting power to agree on a false outcome. Not only would this be prohibitively expensive, but it would also damage the value of the token they control.
+For an attacker to corrupt UMA’s oracle, they’d need to acquire **65% of all UMA tokens**, then convince a majority of that voting power to agree on a false outcome. Not only would this be prohibitively expensive, but it would also damage the value of the token they control.
 
 This structure creates a powerful economic feedback loop:
 
@@ -494,7 +494,7 @@ That’s how UMA turns incentive design into a security system at scale.
 
 <summary><strong>How secure is the DVM?</strong></summary>
 
-To corrupt the DVM, an attacker would need to acquire 51% of all UMA tokens and convince a majority of voting power to support a dishonest resolution. This would be extremely costly, and would cost far more than the potential upside of submitting incorrect data.
+To corrupt the DVM, an attacker would need to acquire 65% of all UMA tokens and convince a majority of voting power to support a dishonest resolution. This would be extremely costly, and would cost far more than the potential upside of submitting incorrect data.
 
 </details>
 
