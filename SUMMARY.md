@@ -27,9 +27,6 @@
   * [Data Asserter](developers/optimistic-oracle-v3/data-asserter.md)
   * [Escalation Managers](developers/optimistic-oracle-v3/escalation-managers.md)
   * [Sandboxed Oracle Environment](developers/optimistic-oracle/sandboxed-oracle-environment.md)
-* [oSnap](developers/osnap/README.md)
-  * [Disabling oSnap](developers/osnap/disabling-osnap.md)
-  * [oSnap Proposal Verification](developers/osnap/osnap-proposal-verification.md)
 * [Setting Custom Bond and Liveness Parameters](developers/setting-custom-bond-and-liveness-parameters.md)
 
 ## Protocol Overview
@@ -74,6 +71,9 @@
   * [Queries](resources/subgraphs/queries.md)
 * [Voting with a 2-Key Contract](resources/voting-with-a-2-key-contract.md)
 * [Unsupported Contracts](resources/unsupported-contracts.md)
+* [oSnap (Deprecated)](resources/osnap/README.md)
+  * [Disabling oSnap](resources/osnap/disabling-osnap.md)
+  * [oSnap Proposal Verification](resources/osnap/osnap-proposal-verification.md)
 * [Additional Resources](resources/additional-resources.md)
 * [Glossary](resources/glossary.md)
 * [Links](resources/links.md)

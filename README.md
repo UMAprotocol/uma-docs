@@ -79,6 +79,6 @@ The **UMA DAO** accepts proposals for onchain actions that require tokenholders 
 
 We request all community members and developers to [join our discord server](https://discord.umaproject.org/) and gain instant help on any issues they face while voting or submitting proposals to UMA.
 
-You can [find more support resources here](broken-reference).
+You can [find more support resources here](/broken/pages/CGYkRbOnhJ483urKrE2v).
 
 The security of our protocol is extremely crucial. If you notice any bugs in the protocol, [please report them here](resources/audit-and-bug-bounty-programs.md#submissions). You can also find details of our [audits here](resources/audit-and-bug-bounty-programs.md).
