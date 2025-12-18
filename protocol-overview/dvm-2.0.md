@@ -16,7 +16,7 @@ The DVM2.0 introduces three key changes to how the UMA token interacts with DVM 
 
 1. Voters now must **stake UMA in the DVM** to participate in the schelling point and to receive rewards. &#x20;
 2. Voters now **earn a pro-rata share of a fixed emission rate** simply for staking their tokens. Staking rewards are emitted at a constant rate per block. This means you can work out the overall UMA inflation over time and stakers can easily work out their APY for staking in the system. In comparison to the previous inflation system, the total inflation rate is no longer a factor of the number of votes held by the DVM. The pro-rata share of tokens received by stakers is independent of their voting performance. The emissions rate is set through UMA governance.&#x20;
-3. Voters' staked balances are also now  **susceptible to slashing**. The slashing mechanism redistributes tokens from inactive and wrong voters to the stakers who voted correctly. This hardens the schelling point by adding a more punitive cost function to being wrong. Governance votes are treated as a special price request category where the slashing mechanism is not applied.
+3. Voters' staked balances are also now  **susceptible to slashing**. The slashing mechanism redistributes tokens from inactive and wrong voters to the stakers who voted correctly. This hardens the schelling point by adding a more punitive cost function to being wrong. Governance votes are treated as a special price request category where the slashing mechanism is applied to inactive voters, but not wrong voters.
 
 ### Vote Delegation
 
