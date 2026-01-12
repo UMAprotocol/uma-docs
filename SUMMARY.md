@@ -72,7 +72,7 @@
 * [Voting with a 2-Key Contract](resources/voting-with-a-2-key-contract.md)
 * [Unsupported Contracts](resources/unsupported-contracts.md)
 * [oSnap (Deprecated)](resources/osnap/README.md)
-  * [Disabling oSnap](resources/osnap/disabling-osnap.md)
+  * [Disabling oSnap via Zodiac Safe App](resources/osnap/disabling-osnap-via-zodiac-safe-app.md)
   * [oSnap Proposal Verification](resources/osnap/osnap-proposal-verification.md)
 * [Additional Resources](resources/additional-resources.md)
 * [Glossary](resources/glossary.md)
