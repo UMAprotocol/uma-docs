@@ -8,3 +8,32 @@ Risk Labs currently provides gas rebates for voters who have staked 1000 or more
 * If a voter commits more than once on a dispute, only the first commit will be rebated.
 * If a delegate address is used to vote, the rebate will be sent to the delegate address.
 * Rebates are calculated for one calendar month and are sent out within the first half of the following month. Announcements are made in the UMA Discord at the time each rebate is sent out.
+
+Risk Labs rebates the Ethereum gas fees voters pay to vote to encourage more participation in securing the Optimistic Oracle. Voters with ≥ 1,000 UMA staked are eligible.
+
+**Voter eligibility:**&#x20;
+
+* Voters must have at least 1000 UMA staked at the start of a commit phase for that round’s commit and reveal transactions to be eligible.
+
+**Transaction eligibility**
+
+* Rebates cover commit and reveal transactions.&#x20;
+  * Committed votes must be revealed to be rebated.&#x20;
+  * If a voter commits more than once on a single vote, only the first commit will be rebated.
+* Rebates do not cover token approval, stake/unstake, or rewards claiming transactions.
+
+**What gas fees are covered**
+
+Rebates are calculated according to the two components of Ethereum gas fees:
+
+* Base Fee: a network fee that is determined by block congestion. The Base Fee is calculated using a base price (gwei per gas) that is the same for all transactions within a given block.
+  * Rebate coverage: full Base Fee with no cap.
+* Priority Fee: an extra tip based on the max priority fee price set by the transaction sender. This tip determines how quickly a transaction is included onchain.
+  * Rebate coverage: Priority fees will only be rebated up to a price cap of 0.001 gwei per gas. Eligible transactions that use a higher priority fee price will only be rebated up to 0.001 gwei per gas.\
+    Note: the voting dapp suggests a priority fee of 0.001 gwei when sending a commit or reveal transaction to your wallet. Most wallets use this suggested fee as a default. Please review your wallet's gas fee settings when voting. &#x20;
+
+**Rebate Payments**
+
+* Rebates are calculated for one calendar month and are sent out within the first half of the following month. Announcements are made in the UMA Discord at the time each rebate is sent out.
+* Rebates are made in ETH.&#x20;
+* Commit or reveal transactions sent via a delegate will be rebated to to the delegate address.
