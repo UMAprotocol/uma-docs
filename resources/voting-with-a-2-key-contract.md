@@ -45,7 +45,7 @@ The following steps help you verify that your two-key contract was deployed corr
 
 #### Voting
 
-To vote with the 2-key contract, you will need to send UMA tokens to it. After sending UMA tokens to the two-key contract address, you can immediately start voting with your hot keys at the voter dApp. This will exclude you from voting with any additional UMA tokens that are in your hot wallet through the voter dApp.
+To vote with the 2-key contract, you will need to send UMA tokens to it. After sending UMA tokens to the two-key contract address, you can immediately start voting with your cold keys at the voter dApp. This will exclude you from voting with any additional UMA tokens that are in your hot wallet through the voter dApp.
 
 #### Withdraw tokens
 
