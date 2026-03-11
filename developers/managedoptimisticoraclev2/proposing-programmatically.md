@@ -6,7 +6,7 @@ Proposing and disputing ManagedOptimisticOracleV2 requests is largely the same a
 
 Programmatic proposers and disputers will be used to listening for OptimisticOracleV2 events and sending proposing and disputing transactions to these addresses. To add support to new ManagedOptimisticOracleV2 deployments, programmatic proposers and disputers will have to add these new deployment addresses to their bot configs.&#x20;
 
-Note: the first ManagedOptimisticOracleV2 deployment is managed by Polymarket and can be found [here](https://polygonscan.com/address/0x2C0367a9DB231dDeBd88a94b4f6461a6e47C58B1).
+The ManagedOptimisticOracleV2 deployment can be found [here](https://polygonscan.com/address/0x2C0367a9DB231dDeBd88a94b4f6461a6e47C58B1).
 
 #### Viewing a Request's Proposer Whitelist
 
