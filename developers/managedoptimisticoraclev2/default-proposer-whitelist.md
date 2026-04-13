@@ -9,6 +9,8 @@ Proposer addresses must meet the two below criteria over the last 6 months:
 * 5 or more Polymarket proposals on OptimisticOracleV2 or ManagedOptimisticOracleV2
 * Proposal accuracy greater than 95% in the last 6 months.
 
+Proposers who base their proposal timing  on other proposer's transactions in the public mempool (i.e. front run) will be removed from the whitelist.&#x20;
+
 ### How do I get on the whitelist?
 
 By proposing [OOV2 Polymarket requests](https://oracle.uma.xyz/propose?oracleType=Optimistic+Oracle+V2\&project=Polymarket) that are not whitelisted to meet the criteria for the next update.
