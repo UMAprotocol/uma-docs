@@ -4,7 +4,7 @@
 
 Risk Labs operates monitoring bots for the following networks and integrations for additional resiliency.
 
-<table><thead><tr><th width="163">UMA Contract Addresses</th><th width="113">Chain ID</th><th width="199">Fully Permissionless Settlement</th><th width="139">DVM Support</th><th>Oracle UI</th></tr></thead><tbody><tr><td><a href="https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/1.json">Ethereum  Mainnet</a><br><em>(Across only)</em></td><td>1</td><td>Yes</td><td>Yes</td><td><a href="https://oracle.uma.xyz">Yes</a></td></tr><tr><td><a href="https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/137.json">Polygon Mainnet</a><br><em>(Polymarket only)</em></td><td>137</td><td>Yes</td><td>Yes</td><td><a href="https://oracle.uma.xyz">Yes</a></td></tr></tbody></table>
+<table><thead><tr><th width="163">UMA Contract Addresses</th><th width="113">Chain ID</th><th width="199">Fully Permissionless Settlement</th><th width="139">DVM Support</th><th>Oracle UI</th></tr></thead><tbody><tr><td><a href="https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/1.json">Ethereum  Mainnet</a><br><em>(Across only)</em></td><td>1</td><td>Yes</td><td>Yes</td><td><a href="https://oracle.uma.xyz">Yes</a></td></tr><tr><td><a href="https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/137.json">Polygon Mainnet</a><br><em>(Polymarket &#x26; predict.fun only)</em></td><td>137</td><td>Yes</td><td>Yes</td><td><a href="https://oracle.uma.xyz">Yes</a></td></tr></tbody></table>
 
 #### Unmonitored
 
