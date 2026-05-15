@@ -13,7 +13,13 @@ OpenZeppelin has performed the following audits on UMA contracts:
 * [Insured Bridge contracts: December 1, 2021](https://blog.openzeppelin.com/uma-audit-l2-bridges/)
 * [Governance, cross-chain oracle, and optimistic rewarder contracts: January 7, 2022](https://blog.openzeppelin.com/uma-audit-phase-6/)
 * [UMA Optimistic Governor Audit: July 21, 2022](https://blog.openzeppelin.com/uma-optimistic-governor-audit/)
-* [Across Token and Token Distributor Audit: July 21, 2022](https://blog.openzeppelin.com/across-token-and-token-distributor-audit/)
+* [DVM 2.0 voting and governance contracts: December 2, 2022](https://blog.openzeppelin.com/uma-dvm-2-0-audit/)
+* [DVM 2.0 incremental updates: December 8, 2022](https://blog.openzeppelin.com/uma-dvm-2-0-incremental-audit)
+* [Optimistic Asserter contract: January 30, 2023](https://blog.openzeppelin.com/uma-optimistic-asserter-audit)
+* [Optimistic Governor migration to Optimistic Oracle v3: June 26, 2023](https://blog.openzeppelin.com/uma-optimistic-governor-incremental-audit)
+* [Oracle bridging contracts upgrade: April 30, 2025](https://www.openzeppelin.com/news/uma-oracle-bridging-contracts-upgrade-audit)
+* [Managed Optimistic Oracle contract: August 26, 2025](https://www.openzeppelin.com/news/managed-optimistic-oracle-audit)
+* [Dispute Router module and Across diff audit: March 2, 2026](https://www.openzeppelin.com/news/uma-and-across-incremental-audit)
 
 Additionally, OpenZeppelin audits incremental upgrades to UMA's contracts on a continuous basis. The continuous audit report can be found [here](https://blog.openzeppelin.com/uma-continuous-audit/).
 
