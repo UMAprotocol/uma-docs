@@ -5,6 +5,8 @@ Risk Labs rebates the Ethereum gas fees voters pay to vote to encourage more par
 **Voter eligibility:**&#x20;
 
 * Voters must have at least 1000 UMA staked at the start of a commit phase for that round’s commit and reveal transactions to be eligible.
+* Starting June 15th, 2026 delegates that are part of a voting pool will not be considered for gas rebates.&#x20;
+  * _Rationale_: Risk Labs operates the gas rebate program to encourage more users to participate in voting to resolve disputes. Therefore delegates that are operated on behalf of a voting pool do not meet the intent of the program.
 
 **Rebate Payments**
 
