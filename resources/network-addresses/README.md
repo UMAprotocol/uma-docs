@@ -8,7 +8,11 @@ Risk Labs operates monitoring bots for the following networks and integrations f
 
 #### Unmonitored
 
-The following networks are supported, but Risk Labs does not provide additional monitoring&#x20;
+The following networks are supported, but Risk Labs does not provide additional monitoring.
+
+{% hint style="info" %}
+Warning to Proposers: Making requests to the OOV2 contract is permissionless and open requests can not be deleted. Requests made by integrations not included in the Monitored section above may be misconfigured so that proposing them will lead to the proposer's bond being permanently stuck. Therefore proposing requests from any integration not listed in the Monitored section above is at the proposers own risk. Proposers who lose their bonds to Unmonitored requests will not be reimbursed.&#x20;
+{% endhint %}
 
 {% hint style="info" %}
 If you plan to integrate UMA's optimistic oracle, we recommend you run your own monitoring bots to provide additional resiliency.
