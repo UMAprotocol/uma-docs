@@ -147,7 +147,7 @@ oSnap posts a bond-backed proposal to the OO after a Snapshot vote concludes. If
 
 <summary><strong>What kinds of data can be proposed?</strong></summary>
 
-Any peice of information that can be verified with public evidence or consensus: asset prices, sporting event outcomes, governance results, hack confirmations, crosschain transfers, and more.
+Any piece of information that can be verified with public evidence or consensus: asset prices, sporting event outcomes, governance results, hack confirmations, crosschain transfers, and more.
 
 </details>
 
@@ -502,7 +502,7 @@ To corrupt the DVM, an attacker would need to acquire 65% of all UMA tokens and 
 
 <summary><strong>What security audits has UMA undergone?</strong></summary>
 
-At UMA, we take security seriously. The protocol has undergone multiple audits by reputable firms. Notably, OpenZeppelin conducted a comprehensive audit of UMA's Across V2 contracts, providing insights and recommendations to enhance security. Additionally, UMA maintains a bug bounty program to encourage responsible disclosure of vulnerabilities. Detailed information about UMA's security audits and bug bounty program can be found in the.
+At UMA, we take security seriously. The protocol has undergone multiple audits by reputable firms. Notably, OpenZeppelin conducted a comprehensive audit of UMA's Across V2 contracts, providing insights and recommendations to enhance security. Additionally, UMA maintains a bug bounty program to encourage responsible disclosure of vulnerabilities. Detailed information about UMA's security audits and bug bounty program can be found in the [Audit & Bug Bounty Programs](https://docs.uma.xyz/resources/audit-and-bug-bounty-programs) page.
 
 </details>
 
