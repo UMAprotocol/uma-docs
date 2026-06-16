@@ -9,7 +9,7 @@ You can keep up to date with what is happening with UMA across our various socia
 * [Discourse](https://discourse.umaproject.org/)
 * [Medium](https://medium.com/uma-project)
 * [YouTube](https://www.youtube.com/channel/UC-3qS7FXxCd7gBMLttmTirw/playlists)
-* [UMAverse](https://projects.umaproject.org/)
+* [Example Projects](https://docs.uma.xyz/protocol-overview/example-projects)
 * [UMA Protocol Calendar](http://calendar.umaproject.org/)
 * [UMA Press Kit](https://github.com/UMAprotocol/website/tree/master/documents/press-kit)
 
