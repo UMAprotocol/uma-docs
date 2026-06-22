@@ -14,7 +14,7 @@ UMA has a GraphQL API Endpoint hosted by [The Graph](https://thegraph.com/docs/a
 
 [Creating an API Key Video Tutorial](https://www.youtube.com/watch?v=UrfIpm-Vlgs)
 
-- [Explorer Page](https://thegraph.com/explorer/subgraph?id=41LCrgtCNBQyDiVVyZEuPxbvkBH9BxxLU3nEZst77V8o&view=Overview)
+- [Playground](https://thegraph.com/hosted-service/subgraph/umaprotocol/mainnet-voting-v2)
 - Graphql Endpoint: https://gateway.thegraph.com/api/[api-key]/subgraphs/id//41LCrgtCNBQyDiVVyZEuPxbvkBH9BxxLU3nEZst77V8o
 - [Code Repo](https://github.com/UMAprotocol/subgraphs)
 
@@ -37,10 +37,10 @@ EMP Subgraphs (includes query for whitelisted collateral)
 - [Mainnet Subgraph](https://thegraph.com/explorer/subgraph/umaprotocol/mainnet-contracts)
 - [Kovan Subgraph](https://thegraph.com/explorer/subgraph/umaprotocol/kovan-contracts)
 
-Voting Subgraphs
+Voting V2 Subgraphs
 
-- [Mainnet Subgraph](https://thegraph.com/explorer/subgraph/umaprotocol/mainnet-voting)
-- [Kovan Subgraph](https://thegraph.com/explorer/subgraph/umaprotocol/kovan-voting)
+- [Mainnet Subgraph](https://thegraph.com/hosted-service/subgraph/umaprotocol/mainnet-voting-v2)
+- [Goerli Subgraph](https://thegraph.com/hosted-service/subgraph/md0x/goerli-voting-v2)
 
 Here is the [source code](https://github.com/UMAprotocol/subgraphs) for deployed subgraphs.
 
