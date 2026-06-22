@@ -6,7 +6,7 @@ Risk Labs manages the default proposer whitelist for the ManagedOptimisticOracle
 
 Proposer addresses must meet the two below criteria over the last 6 months:
 
-* 5 or more Polymarket proposals on OptimisticOracleV2 or ManagedOptimisticOracleV2
+* 20 or more Polymarket proposals on OptimisticOracleV2 or ManagedOptimisticOracleV2
 * Proposal accuracy greater than 95% in the last 6 months.
 
 Proposers who base their proposal timing  on other proposer's transactions in the public mempool (i.e. front run) will be removed from the whitelist.&#x20;
