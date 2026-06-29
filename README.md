@@ -6,14 +6,14 @@ description: A decentralized truth machine
 
 **An optimistic oracle (OO) that can record any verifiable truth or data onto a blockchain** :crystal\_ball:
 
-UMA is an optimistic oracle and dispute arbitration system that securely allows for arbitrary types of data to be brought onchain. UMA’s oracle system provides verified onchain data for projects including:&#x20;
+UMA is an optimistic oracle and dispute arbitration system that securely allows for arbitrary types of data to be brought onchain. UMA’s oracle system provides verified onchain data for projects including:
 
 1. Crosschain bridge
 2. Prediction markets
 3. Insurance protocols
-4. Custom derivatives&#x20;
+4. Custom derivatives
 
-UMA's optimistic oracle (OO) is designed to be modular and extensible with focus on building real-world use cases. Two main versions of the optimistic oracle (OO) are currently live: **OOv2** and **OOv3**. Choosing the right one depends on your use case.&#x20;
+UMA's optimistic oracle (OO) is designed to be modular and extensible with focus on building real-world use cases. Two main versions of the optimistic oracle (OO) are currently live: **OOv2** and **OOv3**. Choosing the right one depends on your use case.
 
 <figure><img src=".gitbook/assets/For Kanishk (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -45,7 +45,7 @@ Having decided the correct optimistic oracle for your use case, let's now dive d
 
 {% tabs %}
 {% tab title="OOv2" %}
-OOv2 prioritizes protocols that need third-parties to propose answers to data requests.&#x20;
+OOv2 prioritizes protocols that need third-parties to propose answers to data requests.
 
 Here are some app guides to help you build on UMA OOv2:
 
@@ -53,7 +53,7 @@ Here are some app guides to help you build on UMA OOv2:
 {% endtab %}
 
 {% tab title="OOv3" %}
-OOv3 prioritizes protocols that simply needs asserted data to be verified.&#x20;
+OOv3 prioritizes protocols that simply needs asserted data to be verified.
 
 Here are some app guides to help you build on UMA OOv3:
 
@@ -67,7 +67,7 @@ Here are some app guides to help you build on UMA OOv3:
 
 The UMA token secures UMA’s optimistic oracle through decentralized governance and economic guarantees against corruption. Token holders vote on upgrades, price requests, and disputes, earning rewards for honest participation.
 
-**UMA Improvement Proposals (UMIPs)** are design documents used to propose changes to the UMA ecosystem. They are an important part of UMA's governance processes.&#x20;
+**UMA Improvement Proposals (UMIPs)** are design documents used to propose changes to the UMA ecosystem. They are an important part of UMA's governance processes.
 
 The **UMA DAO** accepts proposals for onchain actions that require tokenholders approval. An example would be a request for funding from the UMA treasury.
 
@@ -79,6 +79,6 @@ The **UMA DAO** accepts proposals for onchain actions that require tokenholders 
 
 We request all community members and developers to [join our discord server](https://discord.umaproject.org/) and gain instant help on any issues they face while voting or submitting proposals to UMA.
 
-You can [find more support resources here](/broken/pages/CGYkRbOnhJ483urKrE2v).
+You can [find more support resources here](https://app.gitbook.com/s/KdaoNjf9AzgWFNHyPo5b/resources).
 
 The security of our protocol is extremely crucial. If you notice any bugs in the protocol, [please report them here](resources/audit-and-bug-bounty-programs.md#submissions). You can also find details of our [audits here](resources/audit-and-bug-bounty-programs.md).

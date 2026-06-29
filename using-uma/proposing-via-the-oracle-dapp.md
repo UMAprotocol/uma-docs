@@ -4,12 +4,12 @@ Viewing, proposing and disputing ManagedOptimisticOracleV2 requests on the Oracl
 
 * If your connected address is not on the request's proposer whitelist, the propose button on the request's sidebar will be disabled.
 
-<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 * The request's proposer whitelist is displayed under the "More Information" heading at the bottom of the request sidebar.
 
-<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
-* ManagedOptimisticOracleV2 requests are tagged "Managed Optimistic Oracle V2" on the Oracle Dapp.&#x20;
+* ManagedOptimisticOracleV2 requests are tagged "Managed Optimistic Oracle V2" on the Oracle Dapp.
 
-<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>

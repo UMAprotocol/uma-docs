@@ -16,7 +16,7 @@ Note that this price identifier is often in the form of YES or NO, but could als
 
 From the UMIP:
 
-When converted from bytes to UTF-8, the ancillary data should be a dictionary object containing q (question), p1, p2, p3 and p4 keys and values. p4 is optional and will only apply in certain situations.&#x20;
+When converted from bytes to UTF-8, the ancillary data should be a dictionary object containing q (question), p1, p2, p3 and p4 keys and values. p4 is optional and will only apply in certain situations.
 
 Example:
 
@@ -28,8 +28,6 @@ The UMIP goes on to note default values for p1, p2, p3 and p4.
 * p2 is used for “YES” values and defaults to \`1\` if not explicitly assigned
 * p3 is for “UNKNOWN” or “CANNOT BE DETERMINED” and defaults to \`0.5\` if not explicitly assigned.
 * p4 is for situations where the question is expected to eventually be able to be evaluated, but cannot be at this time. An example would be if the outcome to a sports game was asked for, but the game has not yet happened or finished. This will be referred to as the “magic number” and defaults to the minimum int256 value or before e18 scaling: -57896044618658097711785492504343953926634992332820282019728.792003956564819968
-
-Important Note: Polymarket currently uses OptimisticOracleV2. Therefore, the early request should only be used if a proposed value is proposed earlier than the expected event resolution time noted in ancillary data.&#x20;
 
 For additional context on when the magic number or p3 are expected to be returned, from the UMIP:
 
@@ -51,11 +49,11 @@ All price identifier values are treated this way in the UMA system. The UMA vote
 
 When verifying a proposal, it is important to assess the question data and arrive at their own conclusion for what the return value should be. Here is the example above in the oracle UI:
 
-![](https://lh5.googleusercontent.com/Cvtvs57QTWYnrutclqexZHRvZZXiwn1\_mIS8cB8mg87x\_mTZ98YJQh2F0E1vxJZd23bB-e0jqyzyvuqCrRfOM1MKEga8MNLFUKTahQ8QQC3ON2UWdlWRceoeyu47\_gG0BWreae9KF1OhDdLMb9HKHaU)
+![](https://lh5.googleusercontent.com/Cvtvs57QTWYnrutclqexZHRvZZXiwn1_mIS8cB8mg87x_mTZ98YJQh2F0E1vxJZd23bB-e0jqyzyvuqCrRfOM1MKEga8MNLFUKTahQ8QQC3ON2UWdlWRceoeyu47_gG0BWreae9KF1OhDdLMb9HKHaU)
 
-Key data in the proposal is the identifier, timestamp, and the ancillaryData.&#x20;
+Key data in the proposal is the identifier, timestamp, and the ancillaryData.
 
-The YES\_OR\_NO\_QUERY identifier tells us which “pricing methodology” we should be referring to. This is best understood by reading the corresponding UMIP. For all price identifiers, the UMIP can be looked up [here](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers) by price identifier name.&#x20;
+The YES\_OR\_NO\_QUERY identifier tells us which “pricing methodology” we should be referring to. This is best understood by reading the corresponding UMIP. For all price identifiers, the UMIP can be looked up [here](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers) by price identifier name.
 
 The proposed time tells us the timestamp a value was proposed and therefore should be evaluated.
 
@@ -63,7 +61,7 @@ The Additional Text Data above represents the ancillary data and contains the pl
 
 In the example, I can see that the question is asking if Novak Djokovic or Casper Ruud wins the French Open Final. It does not specify a data source so I can use a wide array of publicly available information to determine what I think the correct answer should be. Referring to ESPN scores:
 
-![](https://lh5.googleusercontent.com/lHC2mPmAO3JmIBQKSa9NHcVK5aWrpKjqYiwUzZUn1QGRULH2Xo6sZ\_EgUKj0vcNyTZcofkYKGNP1WTyXUInmOB0ZNUMhQcVzo-TztwR3iwaLsv1znssum3KYrVZo8N\_OKA6X5t38ZicXM4EAh8Rz0Ds)
+![](https://lh5.googleusercontent.com/lHC2mPmAO3JmIBQKSa9NHcVK5aWrpKjqYiwUzZUn1QGRULH2Xo6sZ_EgUKj0vcNyTZcofkYKGNP1WTyXUInmOB0ZNUMhQcVzo-TztwR3iwaLsv1znssum3KYrVZo8N_OKA6X5t38ZicXM4EAh8Rz0Ds)
 
 I see that Djokovic won and I should continue to read the ancillary data to determine which return value should be used in this scenario.
 
@@ -78,6 +76,6 @@ Where p1 corresponds to Ruud, p2 to Djokovic, p3 to unknown/50-50
 
 Since Djokovic won and p2 corresponds to 1, the proposed value should be p2:1.
 
-Voters/proposers should typically evaluate all price requests independent of the party that has requested the data. But as a validation tool, the requestor can sometimes provide information that will help us verify the values that we are about to propose. As an example, this question was from [https://polymarket.com/](https://polymarket.com/).&#x20;
+Voters/proposers should typically evaluate all price requests independent of the party that has requested the data. But as a validation tool, the requestor can sometimes provide information that will help us verify the values that we are about to propose. As an example, this question was from [https://polymarket.com/](https://polymarket.com/).
 
 This is one simple example of evaluating a YES\_OR\_NO\_QUERY, but almost all questions follow the same format.

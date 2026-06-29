@@ -56,7 +56,7 @@ Yes. UMA can verify outcomes of real-world events like elections, sports results
 
 <summary><strong>Is UMA only for DeFi?</strong></summary>
 
-No. UMA can be used anywhere trustless verification is needed. While its roots are in DeFi, UMA supports use cases across prediction markets, DAO governance, crosschain interop, \
+No. UMA can be used anywhere trustless verification is needed. While its roots are in DeFi, UMA supports use cases across prediction markets, DAO governance, crosschain interop,\
 insurance, gaming, and much more.
 
 </details>
@@ -104,36 +104,6 @@ UMA relies on the principle of economic guarantees. Economic incentives are in p
 <summary><strong>Can I trust UMA without understanding how it works?</strong></summary>
 
 Yes, UMA is designed to be trustless. The economic game theory ensures that data is highly likely to be accurate, even if you don’t personally verify each step.
-
-</details>
-
-***
-
-## oSnap and DAO Tooling
-
-<details>
-
-<summary><strong>What is oSnap?</strong></summary>
-
-[oSnap](https://docs.uma.xyz/developers/osnap) is UMA’s governance automation tool. It connects Snapshot votes with onchain execution, letting DAOs run offchain votes and trustlessly execute them onchain with UMA’s OO securing the results. Notable users include Across, Developer DAO, Nexus Mutual, and many more.
-
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
-
-</details>
-
-<details>
-
-<summary><strong>Does oSnap ensure the integrity of governance execution?</strong></summary>
-
-Yes. By anchoring Snapshot votes to UMA’s decentralized verification process, oSnap ensures that governance outcomes cannot be tampered with between voting and execution.
-
-</details>
-
-<details>
-
-<summary><strong>How does oSnap ensure secure governance execution?</strong></summary>
-
-oSnap posts a bond-backed proposal to the OO after a Snapshot vote concludes. If no one disputes the validity of the vote outcome, the proposal is executed onchain automatically. If disputed, the DVM resolves it through tokenholder voting.
 
 </details>
 
@@ -319,7 +289,7 @@ Always make sure to check the proposal timestamp and take it into consideration 
 
 _Learn more about P4_ [_here_](https://blog.uma.xyz/articles/what-is-p4)_._
 
-<figure><img src=".gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -408,7 +378,7 @@ UMA is currently deployed and fully supported (including Oracle UI, DVM support,
 * Core Mainnet
 * Story Mainnet
 
-For the most up-to-date list of supported networks, including testnets and partially supported chains, you can find UMA's [network information here](/broken/pages/CGYkRbOnhJ483urKrE2v).
+For the most up-to-date list of supported networks, including testnets and partially supported chains, you can find UMA's [network information here](https://app.gitbook.com/s/KdaoNjf9AzgWFNHyPo5b/resources).
 
 </details>
 
@@ -621,7 +591,7 @@ Very. UMA was built with flexibility in mind. You can customize nearly every par
 * **Liveness period:** Set how long others have to challenge your data.
 * **Bond size:** Increase the required stake for proposers or disputers to raise the cost of dishonest participation.
 * **Resolution criteria:** Add detailed instructions or requirements to help voters resolve disputes clearly and accurately.
-* **Data format:** You define the format of the data to be verified (e.g. booleans, multiple-choice,  integers, or encoded data using upgrades like UMIP-185).
+* **Data format:** You define the format of the data to be verified (e.g. booleans, multiple-choice, integers, or encoded data using upgrades like UMIP-185).
 
 </details>
 
@@ -796,7 +766,7 @@ Token emissions are controlled by governance. UMA emissions are used to provide 
 
 <summary><strong>Where can I track UMA's token metrics?</strong></summary>
 
-The current supply of $UMA and emission rates are defined onchain and can be found [here](https://etherscan.io/address/0x7b292034084A41B9D441B71b6E3557Edd0463fa8#code)**.**&#x20;
+The current supply of $UMA and emission rates are defined onchain and can be found [here](https://etherscan.io/address/0x7b292034084A41B9D441B71b6E3557Edd0463fa8#code)**.**
 
 </details>
 

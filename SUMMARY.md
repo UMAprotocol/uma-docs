@@ -1,8 +1,35 @@
 # Table of contents
 
 * [Welcome to UMA](README.md)
-* [What's New!](whats-new.md)
 * [FAQs](faqs.md)
+
+## Protocol Overview
+
+* [How does UMA's Oracle work?](protocol-overview/how-does-umas-oracle-work.md)
+* [DVM 2.0](protocol-overview/dvm-2.0.md)
+* [DVM 2.0 FAQ](protocol-overview/dvm-2.0-faq.md)
+
+## Using UMA
+
+* [Default Proposer Whitelist](using-uma/default-proposer-whitelist.md)
+* [Proposing via the Oracle Dapp](using-uma/proposing-via-the-oracle-dapp.md)
+* [Proposing Programmatically](using-uma/proposing-programmatically.md)
+* [Disputing Via the Oracle Dapp](using-uma/disputing-oracle-data.md)
+* [Voting Walkthrough](using-uma/voting-walkthrough/README.md)
+  * [Voter Guide](using-uma/voting-walkthrough/voter-guide.md)
+  * [Voting Gas Rebates](using-uma/voting-walkthrough/voting-gas-rebates.md)
+  * [Discord Summaries](using-uma/voting-walkthrough/discord-summaries.md)
+
+## Community
+
+* [Governance](community/governance/README.md)
+  * [The UMIP Process](community/governance/the-umip-process.md)
+  * [DAO Proposals](community/governance/dao-proposals.md)
+
+## Verification Guide
+
+* [Polymarket](verification-guide/yes_or_no.md)
+* [Across](verification-guide/across.md)
 
 ## Developers
 
@@ -14,10 +41,6 @@
   * [Insurance Claim Arbitration](developers/optimistic-oracle/in-depth-tutorial-insurance-claims-arbitration.md)
   * [Internal Optimistic Oracle](developers/optimistic-oracle/internal-optimistic-oracle.md)
   * [Optimistic Arbitrator](developers/optimistic-oracle/in-depth-tutorial-optimistic-arbitrator.md)
-* [ManagedOptimisticOracleV2](developers/managedoptimisticoraclev2/README.md)
-  * [Proposing via the Oracle Dapp](developers/managedoptimisticoraclev2/proposing-via-the-oracle-dapp.md)
-  * [Proposing Programmatically](developers/managedoptimisticoraclev2/proposing-programmatically.md)
-  * [Default Proposer Whitelist](developers/managedoptimisticoraclev2/default-proposer-whitelist.md)
 * [Optimistic Oracle v3](developers/optimistic-oracle-v3/README.md)
   * [ASSERT\_TRUTH Deprecation](developers/optimistic-oracle-v3/assert_truth-deprecation.md)
   * [Using Blacklisting Tokens as Currency](developers/optimistic-oracle-v3/using-blacklisting-tokens-as-currency.md)
@@ -27,37 +50,9 @@
   * [Data Asserter](developers/optimistic-oracle-v3/data-asserter.md)
   * [Escalation Managers](developers/optimistic-oracle-v3/escalation-managers.md)
   * [Sandboxed Oracle Environment](developers/optimistic-oracle/sandboxed-oracle-environment.md)
+* [ManagedOptimisticOracleV2](developers/managedoptimisticoraclev2.md)
+* [Resolving Testnet Disputes](developers/resolving-disputes.md)
 * [Setting Custom Bond and Liveness Parameters](developers/setting-custom-bond-and-liveness-parameters.md)
-
-## Protocol Overview
-
-* [How does UMA's Oracle work?](protocol-overview/how-does-umas-oracle-work.md)
-* [Example Projects](protocol-overview/example-projects.md)
-* [DVM 2.0](protocol-overview/dvm-2.0.md)
-* [DVM 2.0 FAQ](protocol-overview/dvm-2.0-faq.md)
-
-## Community
-
-* [Governance](community/governance/README.md)
-  * [The UMIP Process](community/governance/the-umip-process.md)
-  * [DAO Proposals](community/governance/dao-proposals.md)
-
-## Using UMA
-
-* [Voting Walkthrough](using-uma/voting-walkthrough/README.md)
-  * [Voter Guide](using-uma/voting-walkthrough/voter-guide.md)
-  * [Voting Gas Rebates](using-uma/voting-walkthrough/voting-gas-rebates.md)
-  * [Discord Summaries](using-uma/voting-walkthrough/discord-summaries.md)
-* [Proposing Oracle Data](using-uma/providing-oracle-data.md)
-* [Disputing Oracle Data](using-uma/disputing-oracle-data.md)
-* [Resolving Disputes](using-uma/resolving-disputes.md)
-
-## Verification Guide
-
-* [Verification System](verification-guide/verification-system.md)
-* [Polymarket](verification-guide/yes_or_no.md)
-* [Across](verification-guide/across.md)
-* [oSnap](verification-guide/osnap.md)
 
 ## Resources
 
