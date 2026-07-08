@@ -2,6 +2,8 @@
 
 UMA is an optimistic oracle that resolves wide-ranging requests for information in a scalable and reliable way. The system has two components: the optimistic oracle and a dispute resolution mechanism called the DVM. The optimistic oracle resolves the vast majority of requests, currently 99.8%, quickly and cheaply, and escalates the others to be resolved through dispute resolution.
 
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
 ### Optimistic Oracle
 
 The optimistic oracle resolves discrete requests for information using proposers and disputers who are economically incentivized to participate honestly.
