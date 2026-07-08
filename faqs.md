@@ -50,17 +50,6 @@ Yes. UMA can verify outcomes of real-world events like elections, sports results
 
 </details>
 
-{% include ".gitbook/includes/untitled (1).md" %}
-
-<details>
-
-<summary><strong>Is UMA only for DeFi?</strong></summary>
-
-No. UMA can be used anywhere trustless verification is needed. While its roots are in DeFi, UMA supports use cases across prediction markets, DAO governance, crosschain interop,\
-insurance, gaming, and much more.
-
-</details>
-
 ***
 
 ## How UMA Works
@@ -359,7 +348,7 @@ Intersubjective data is information that may not be purely objective, but is sti
 
 The liveness period, also known as the “challenge period”, is a window of time after a data proposal during which someone can raise a dispute. This duration is configurable and often depends on the use case’s sensitivity or urgency.
 
-The most common liveness period ranges from **2 hours to 2 days**. Many prediction markets, like Polymarket, use this configuration. Across Protocol also uses a 2-hour liveness period because it best suits its crosschain interop use case.
+The most common liveness period ranges from **15 minutes to 2 days**. Many prediction markets, like Polymarket, use this configuration. Across Protocol also uses a 2-hour liveness period because it best suits its crosschain interop use case.
 
 </details>
 
@@ -367,72 +356,7 @@ The most common liveness period ranges from **2 hours to 2 days**. Many predicti
 
 <summary><strong>What chains does UMA support?</strong></summary>
 
-UMA is currently deployed and fully supported (including Oracle UI, DVM support, and oSnap functionality) on the following mainnets:
-
-* Ethereum Mainnet
-* Polygon Mainnet
-* Optimism Mainnet
-* Arbitrum Mainnet
-* Base Mainnet
-* Blast Mainnet
-* Core Mainnet
-* Story Mainnet
-
 For the most up-to-date list of supported networks, including testnets and partially supported chains, you can find UMA's [network information here](https://app.gitbook.com/s/KdaoNjf9AzgWFNHyPo5b/resources).
-
-</details>
-
-***
-
-## Recent Optimistic Oracle Upgrades
-
-<details>
-
-<summary><strong>What does UMIP-183 do, and why is it useful?</strong></summary>
-
-[UMIP-183](https://blog.uma.xyz/articles/what-is-umas-optimistic-oracle) introduced the MULTIPLE\_VALUES price identifier, allowing a single data request to return up to **seven values**. This is a major win for prediction markets, sports betting apps, and any protocol resolving multiple outcomes at once.
-
-By batching outcomes into one transaction, protocols can:
-
-* Drastically reduce gas costs.
-* Simplify resolution logic.
-* Settle multiple events faster and more efficiently.
-
-Use cases like Polymarket and sports betting platforms directly benefit from this added scale and flexibility.
-
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
-
-</details>
-
-<details>
-
-<summary><strong>What is UMIP-185, and how does it improve performance?</strong></summary>
-
-[UMIP-185](https://x.com/UMAprotocol/status/1914819386369573070) allows proposers to submit **hashed or offchain-referenced data** instead of full ancillary strings. This reduces the size of onchain transactions, which:
-
-* Lowers gas fees.
-* Speeds up proposal submissions.
-* Makes oracle usage more cost-effective in congested markets.
-
-This is especially helpful for integrations that involve complex or large datasets.
-
-</details>
-
-<details>
-
-<summary><strong>What is the “slow proposer penalty,” and why was it added?</strong></summary>
-
-To discourage latency in oracle activity, UMA introduced a **penalty for proposers who wait until the end of the liveness window** to submit data. This incentivizes faster responses and ensures that applications relying on the oracle don’t get bottlenecked by late proposals.
-
-Faster proposers = faster oracle = better UX for users.
-
-</details>
-
-<details>
-
-<summary><strong>How do these improvements affect the developer experience?</strong></summary>
-
-All of these upgrades are designed to make UMA’s oracle more composable, efficient, and scalable. Whether you're resolving crosschain messages, prediction markets, or governance proposals, these tools help reduce cost and complexity while preserving trustlessness.
 
 </details>
 
@@ -493,28 +417,6 @@ This economic structure creates a financial deterrent against dishonest behavior
 
 ***
 
-## Compatibility and Limitations
-
-<details>
-
-<summary><strong>Are there any limitations on the types of data UMA can verify?</strong></summary>
-
-UMA's oracle is designed to verify any data that is publicly available and independently verifiable. In particular, the OO and DVM are best built to process objective and intersubjective data. This includes a wide range of data types, such as asset prices, event outcomes, and real-world occurrences.
-
-However, the OO is not suitable for data that is purely subjective or lacks a clear, verifiable source. For instance, personal opinions or unverifiable claims fall outside the scope of what UMA can accurately verify.​
-
-</details>
-
-<details>
-
-<summary><strong>Is UMA compatible with other oracle systems?</strong></summary>
-
-Yes, UMA is designed to be complementary to other oracle systems. It can function alongside traditional oracles, providing an additional layer of verification or serving as a fallback mechanism.
-
-</details>
-
-***
-
 ## Operational Edge Cases
 
 <details>
@@ -537,128 +439,6 @@ If either threshold isn’t met, the vote rolls into the next round. It's design
 <summary><strong>How does UMA handle network congestion or high gas periods?</strong></summary>
 
 UMA is built to handle network congestion by operating across multiple L2s like Arbitrum and Optimism, reducing gas fees. On top of that, upgrades like **UMIP-185** improve efficiency by letting proposers use hashes or pointers instead of submitting full data onchain, cutting gas costs further. UMA also offers gas rebates for voters, so participation stays affordable even in high-fee environments.
-
-</details>
-
-***
-
-## Building and Integrating with UMA
-
-<details>
-
-<summary><strong>What developer resources are available to get started?</strong></summary>
-
-Visit[ docs.uma.xyz](https://docs.uma.xyz/) for integration guides, tutorials, contract templates, and walkthroughs. [UMA’s Discord](https://discord.com/invite/39GFUAk5bA) is also active for dev support.
-
-</details>
-
-<details>
-
-<summary><strong>How do I integrate UMA’s optimistic oracle into my project?</strong></summary>
-
-You can use UMA's OOV3 smart contracts to submit and verify data. Integration info and quick-start guides are available on UMA's [developer docs](https://docs.uma.xyz/developers/quick-start).
-
-</details>
-
-<details>
-
-<summary><strong>Are there different versions of the optimistic oracle?</strong></summary>
-
-Yes. UMA’s OO is constantly being improved to evolve and serve in-demand use cases over time. Currently, there are two versions of the OO available:
-
-1. **OOV2**: Implements the use of data requests. Integrations must submit data requests that can then be answered by third-party proposers. Rules must be included in the request to establish the specific parameters for proposers and disputers to follow.
-2. **OOV3**: Unlike OOV2, OOV3 doesn’t implement data requests. Instead, integrations skip that step and submit their own data proposals along with the rules. The challenge period and dispute process remains the same.
-
-</details>
-
-<details>
-
-<summary><strong>Which version of UMA’s optimistic oracle should I use?</strong></summary>
-
-The primary use cases for **OOV2** include prediction markets, sports betting applications, and insurance protocols.
-
-The primary use cases for **OOV3** include crosschain infrastructure, content moderation, transaction verification, governance, and insurance protocols.
-
-</details>
-
-<details>
-
-<summary><strong>How customizable is the UMA oracle’s logic for unique applications?</strong></summary>
-
-Very. UMA was built with flexibility in mind. You can customize nearly every parameter of a request to fit your specific use case, including:
-
-* **Question format:** You decide what you're asking and how it's phrased.
-* **Liveness period:** Set how long others have to challenge your data.
-* **Bond size:** Increase the required stake for proposers or disputers to raise the cost of dishonest participation.
-* **Resolution criteria:** Add detailed instructions or requirements to help voters resolve disputes clearly and accurately.
-* **Data format:** You define the format of the data to be verified (e.g. booleans, multiple-choice, integers, or encoded data using upgrades like UMIP-185).
-
-</details>
-
-<details>
-
-<summary><strong>Can I test UMA locally or on testnet?</strong></summary>
-
-Yes. UMA offers contracts on major Ethereum testnets. Developers can simulate oracle requests, disputes, bonding, and DVM voting in staging environments. Here is the full list of supported testnet chains:
-
-* Ethereum Sepolia
-* Arbitrum Sepolia
-* Optimism Sepolia
-* Polygon Mumbai
-* Polygon Amoy
-* Base Sepolia
-* Blast Sepolia
-* Core Testnet
-* Story Odyssey
-
-You can view the full list of supported chains [here](https://docs.uma.xyz/resources/network-addresses).
-
-</details>
-
-<details>
-
-<summary><strong>What are common use cases for UMA?</strong></summary>
-
-* Prediction markets (e.g. Polymarket)
-* Crosschain bridges (e.g. Across Protocol)
-* DAO governance (e.g. oSnap with Nexus Mutual, Developer DAO)
-* IP dispute verification (e.g. Story Protocol)
-* AI agent verification (e.g. Axal)
-* Insurance protocol
-
-</details>
-
-<details>
-
-<summary><strong>Why would I use UMA instead of a traditional price feed oracle?</strong></summary>
-
-Price feed oracles can only handle one type of data: prices. UMA is built to handle any publicly verifiable information.
-
-That’s why UMA is the go-to oracle for onchain applications such as prediction markets, crosschain interop protocols, IP ownership layers, and many more—because each of these rely on access to verified **intersubjective data**. Price feed oracles simply can’t provide that. UMA can.
-
-Additionally, most traditional price feed oracles constantly push data onchain, even when it isn’t needed. This wastes gas and introduces attack vectors. UMA’s OO only verifies data when requested, making it more gas-efficient and censorship-resistant. It also supports **any** type of data, not just prices, allowing for use cases like governance execution, crosschain messages, and real-world event verification.
-
-There’s also a major cost advantage. Setting up and maintaining a price feed on traditional oracles is expensive. It often requires upfront coordination, whitelisting, and ongoing fees. UMA is **fully permissionless and free to use**. There are no fees to access the oracle. You only pay for gas and bonding if you interact with it directly.
-
-</details>
-
-<details>
-
-<summary><strong>How does Polymarket use UMA?</strong></summary>
-
-Polymarket leverages UMA's OOV2 to resolve the outcomes of its prediction markets in a decentralized and trustless manner. When Polymarket creates a prediction market, a data query is sent to the OO. Anyone can then propose the outcome to UMA's OO, which assumes the proposed result is correct unless challenged within a 48-hour predefined dispute window.
-
-If a dispute arises, it is escalated to UMA's DVM, where $UMA token holders vote to determine the accurate outcome. This system allows Polymarket to handle a wide range of markets, including those based on natural language and intersubjective data, which traditional oracles cannot process.
-
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
-
-</details>
-
-<details>
-
-<summary><strong>How does Across use UMA?</strong></summary>
-
-Across is a [crosschain bridge](https://across.to/) that uses a unique variation of UMA’s OOV3 to verify crosschain Intents, which are statements of a user’s bridging transaction, before relayers are repaid. This gives Across security guarantees without needing to validate every transaction in real-time.
 
 </details>
 
@@ -779,28 +559,6 @@ The current supply of $UMA and emission rates are defined onchain and can be fou
 <summary><strong>How can I contribute to UMA beyond voting?</strong></summary>
 
 There are tons of ways to get involved! You can build integrations, write code, create content, improve the docs, join governance discussions, or just hang out in the [UMA Discord](https://discord.gg/uma) and vibe with the community. Whether you're technical or not, there's space for you to contribute.
-
-</details>
-
-<details>
-
-<summary><strong>Are there developer grants available?</strong></summary>
-
-Yes. UMA offers grants to developers and teams building tools, integrations, or initiatives that advance the ecosystem. To apply, you’ll start by posting a proposal in the[ Funding Proposals](https://discourse.uma.xyz/c/uma-protocol/funding-proposals/41) category of UMA’s governance forum. From there, the community will review and provide feedback.
-
-If the proposal gains traction, it can proceed to a Snapshot vote, and if successful, be submitted onchain with help from Risk Labs or directly by the proposer. All grant proposals are evaluated based on their technical feasibility, ecosystem impact, and funding requirements. If you have any questions about our grant program, please reach out to us in our [Discord](https://discord.gg/uma).
-
-Yes. UMA offers grants to support developers and teams building tools, integrations, or infrastructure that strengthens the ecosystem.
-
-To apply, start by posting your idea in the [Funding Proposals](https://discourse.uma.xyz/c/uma-protocol/funding-proposals/41) category in the UMA governance forum. The community will review and provide feedback. If your proposal gains traction, it can move to a Snapshot vote, and if approved, it’ll execute onchain with help from Risk Labs or directly by the proposer.
-
-Grants are evaluated based on:
-
-* Technical feasibility
-* Ecosystem impact
-* Budget/funding needs
-
-Have questions? Come chat with us in [Discord](https://discord.gg/uma).
 
 </details>
 

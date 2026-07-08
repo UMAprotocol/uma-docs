@@ -1,34 +1,46 @@
-# How does UMA's Oracle work?
+# How does UMA work?
 
-UMA's Optimistic Oracle allows contracts to quickly request and receive data information. The Optimistic Oracle acts as a generalized escalation game between contracts that initiate a price request and UMA's dispute resolution system known as the Data Verification Mechanism (DVM). Prices proposed by the Optimistic Oracle will not be sent to the DVM unless it is disputed.
-
-If a dispute is raised, a request is sent to the DVM. All contracts built on UMA use the DVM as a backstop to resolve disputes. Disputes sent to the DVM will be resolved within a few days - after UMA tokenholders vote on what the correct outcome should have been.
-
-<figure><img src="../.gitbook/assets/Asserterupdatemarch.png" alt=""><figcaption><p>Oracle system diagram</p></figcaption></figure>
+UMA is an optimistic oracle that resolves wide-ranging requests for information in a scalable and reliable way. The system has two components: the optimistic oracle and a dispute resolution mechanism called the DVM. The optimistic oracle resolves the vast majority of requests, currently 99.8%, quickly and cheaply, and escalates the others to be resolved through dispute resolution.
 
 ### Optimistic Oracle
 
-The first part of UMA's oracle system is the Optimistic Oracle. This is a layer that is designed to optimistically verify pieces of data quickly. It is secured by the UMA DVM, because disputes can be escalated from the Optimistic Oracle layer to the DVM for dispute arbitration. The main lifecycle of the OO looks like this, and is detailed in the Asserter and Disputer rows within the diagram above.
+The optimistic oracle resolves discrete requests for information using proposers and disputers who are economically incentivized to participate honestly.
 
-1. An Asserter will post a bonded assertion about the state of the world. This assertion will :
-   * **identifier:** price identifier being requested.
-   * **timestamp:** timestamp of the fact being asserted.
-   * **claim:** ancillary data containing additional information about the assertion&#x20;
-   * **currency:** ERC20 token used for payment of rewards and fees. Must be approved for use with the DVM.
-   * **bond:** a bond size that represents the stake the asserter is putting on their statement being correct.
-2. Disputers can refute a piece of data submitted by an Asserter within the assertion liveness period by referencing their own off-chain price feeds and determination methodologies. The liveness period is a pre-defined amount of time a that an assertion can be disputed.
-3. If Disputers do not refute the price submitted by the Asserter within the proposal liveness period, the assertion is optimistically treated as being correct.
-4. If an assertion is disputed, the assertion will be submitted to UMA’s DVM for dispute arbitration.
+#### Requests
 
-### UMA's Data Verification Mechanism
+Discrete data requests are posted to the oracle and include:
 
-The Data Verification Mechanism (DVM) provides a backstop to the UMA OO by resolving disputes that happen when a proposed/asserted piece of data is disputed.
+* Detailed instructions on how the request should be resolved at some time in the future. For example: “This request will resolve YES if John Doe wins the election, or NO if John Doe does not win.”
+* A proposer reward for correctly proposing the request
+* A bond amount that proposers must risk to propose the request
+* A minimum challenge period duration during which pending proposals can be disputed
 
-1. In the event of a dispute, a price request is submitted to the DVM which proposes a vote to UMA tokenholders to report the price of the asset at a specific timestamp.
-2. The vote will conclude after a 48-96 hour voting period.
-3. UMA tokenholders will reference the price identifier's [UMIP](../community/governance/the-umip-process.md) to determine how to arrive at a vote result via off-chain price feeds and methodologies.&#x20;
-4. The DVM will aggregate votes from UMA tokenholders to determine the final price of the asset for a given timestamp.
+#### Proposals
 
-The DVM is powerful because it encompasses an element of human judgment to ensure contracts are securely and correctly managed when issues arise from volatile (and sometimes manipulatable) markets.
+Third-party proposers review open requests and propose resolutions when their resolution criteria are satisfied. Each request can only be proposed once. A proposal includes:
 
-UMA's oracle system is constructed with economic guarantees around the cost of corrupting the DVM to ensure it will cost more to corrupt the oracle (i.e., obtain 65% or more UMA tokens) than the amount someone could profit from corrupting the oracle (i.e. stealing funds within contracts on UMA).
+* A proposed resolution to the request, such as YES
+* A proposer bond that is refundable if the proposal is deemed correct
+
+The proposer reward incentivizes proposers to participate. The proposer bond incentivizes proposers to post only correct proposals.
+
+Proposals are considered pending for a challenge period during which anyone can dispute the proposal. If no dispute is sent during the challenge period, the proposal is settled as correct, and the proposer receives the reward and the refunded proposer bond.
+
+#### Disputes
+
+Disputers review proposals during the challenge period for correctness. If they find an incorrect proposal, they submit a dispute that includes:
+
+* An assertion that the proposal is incorrect
+* A dispute bond that is refundable if the proposal is deemed incorrect
+
+Each proposal can only be disputed once. Correct disputes are rewarded with a portion of the forfeited proposer bond. This incentivizes disputers to review proposals. The dispute bond incentivizes disputers to make only correct disputes.
+
+Disputes are forwarded to the DVM for dispute resolution. After the DVM has resolved a dispute, the proposal and dispute bonds are settled.
+
+### Dispute Resolution via DVM
+
+The Data Verification Mechanism, or DVM, resolves disputes sent to it by UMA’s optimistic oracle. The DVM is a Schelling point mechanism where UMA stakers resolve disputes in return for staking rewards. Stakers commit secret votes during a 24-hour commit period and reveal them in the following 24-hour reveal period.
+
+Disputes resolve when a minimum 65% majority of staked UMA is cast in favor of a single outcome. Stakers who did not vote, or who voted against the majority, are slashed, with the slashed amount redistributed to the majority voters. Slashing and rewards incentivize stakers to vote for the most correct answer. Casting votes in secret prevents lazy voters from copying other voters and dishonest voters from coordinating on an incorrect result.
+
+Unstaking UMA requires waiting a one-week period before the tokens are released. If the DVM were successfully corrupted by 65% of stake voting against reality, the UMA token would depreciate significantly in the following week, resulting in a loss for the attackers. This creates a cost of corruption that disincentivizes corrupting the oracle.

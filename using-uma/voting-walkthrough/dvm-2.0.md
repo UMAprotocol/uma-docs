@@ -1,12 +1,8 @@
----
-description: The next iteration of the UMA DVM
----
-
 # DVM 2.0
 
-The UMA DVM is the arbitrator for the Optimistic Oracle and other UMA ecosystem contracts. It facilitates dispute resolution wherein UMA token holders vote in a commit reveal schelling point mechanism. For an overview of how the DVM see [here. ](https://docs.umaproject.org/protocol-overview/how-does-umas-oracle-work#umas-data-verification-mechanism)The DVM has been rebuilt with the new iteration being released in Q1 of 2023.&#x20;
+The UMA DVM is the arbitrator for the Optimistic Oracle and other UMA ecosystem contracts. It facilitates dispute resolution wherein UMA token holders vote in a commit reveal schelling point mechanism. For an overview of how the DVM see [here. ](https://docs.umaproject.org/protocol-overview/how-does-umas-oracle-work#umas-data-verification-mechanism)The DVM has been rebuilt with the new iteration being released in Q1 of 2023.
 
-At a high level, the upgrade adds a new staking and slashing mechanism wherein voters earn a pro-rata share of emissions for staking and are slashed for voting wrong (or not voting). This upgrade also reworks a number of other DVM contracts such as the governor, proposer contract and a new designated voting contract. Finally, this upgrade adds a new emergency recovery mechanism to the DVM that enables admin proposals to bypass the DVM's schelling point oracle system in the event of an emergency. More detail on the individual changes are broken down in the sections that follow.&#x20;
+At a high level, the upgrade adds a new staking and slashing mechanism wherein voters earn a pro-rata share of emissions for staking and are slashed for voting wrong (or not voting). This upgrade also reworks a number of other DVM contracts such as the governor, proposer contract and a new designated voting contract. Finally, this upgrade adds a new emergency recovery mechanism to the DVM that enables admin proposals to bypass the DVM's schelling point oracle system in the event of an emergency. More detail on the individual changes are broken down in the sections that follow.
 
 This doc page outlines some of the changes between DVM 1.0 and DVM 2.0 and some other relevant implementation details.
 
@@ -14,9 +10,9 @@ This doc page outlines some of the changes between DVM 1.0 and DVM 2.0 and some 
 
 The DVM2.0 introduces three key changes to how the UMA token interacts with DVM system:
 
-1. Voters now must **stake UMA in the DVM** to participate in the schelling point and to receive rewards. &#x20;
-2. Voters now **earn a pro-rata share of a fixed emission rate** simply for staking their tokens. Staking rewards are emitted at a constant rate per block. This means you can work out the overall UMA inflation over time and stakers can easily work out their APY for staking in the system. In comparison to the previous inflation system, the total inflation rate is no longer a factor of the number of votes held by the DVM. The pro-rata share of tokens received by stakers is independent of their voting performance. The emissions rate is set through UMA governance.&#x20;
-3. Voters' staked balances are also now  **susceptible to slashing**. The slashing mechanism redistributes tokens from inactive and wrong voters to the stakers who voted correctly. This hardens the schelling point by adding a more punitive cost function to being wrong. Governance votes are treated as a special price request category where the slashing mechanism is not applied.
+1. Voters now must **stake UMA in the DVM** to participate in the schelling point and to receive rewards.
+2. Voters now **earn a pro-rata share of a fixed emission rate** simply for staking their tokens. Staking rewards are emitted at a constant rate per block. This means you can work out the overall UMA inflation over time and stakers can easily work out their APY for staking in the system. In comparison to the previous inflation system, the total inflation rate is no longer a factor of the number of votes held by the DVM. The pro-rata share of tokens received by stakers is independent of their voting performance. The emissions rate is set through UMA governance.
+3. Voters' staked balances are also now **susceptible to slashing**. The slashing mechanism redistributes tokens from inactive and wrong voters to the stakers who voted correctly. This hardens the schelling point by adding a more punitive cost function to being wrong. Governance votes are treated as a special price request category where the slashing mechanism is not applied.
 
 ### Vote Delegation
 
@@ -76,11 +72,10 @@ The GAT within the DVM 2.0 is a constant amount of UMA that must vote on any giv
 
 The SPAT is a new concept from the DVM 2.0. It is a percentage of staked tokens that must vote and agree in order for a vote to not roll. The required SPAT is 65% currently of staked tokens.
 
-If a vote does not satisfy both of these constraints, it will roll.&#x20;
+If a vote does not satisfy both of these constraints, it will roll.
 
 #### Vote Deletion
 
 There are certain situations in the DVM 2.0 where voters may want to delete votes. A good example of this would be in the case of spam deletion, where needless price requests are submitted in order by an attacker to try to create some sort of desired slashing conditions.
 
 In the DVM 2.0, votes are deleted once they have rolled a certain number of times. So if voters choose to not vote on the resolution of price requests, and either the GAT or SPAT are not met for a set number of voting rounds, those price requests will become deletable. At the time of DVM 2.0 initial deployment, the number of times a vote is rolled before being deleted is 4.
-

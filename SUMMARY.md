@@ -5,9 +5,8 @@
 
 ## Protocol Overview
 
-* [How does UMA's Oracle work?](protocol-overview/how-does-umas-oracle-work.md)
-* [DVM 2.0](protocol-overview/dvm-2.0.md)
-* [DVM 2.0 FAQ](protocol-overview/dvm-2.0-faq.md)
+* [How does UMA work?](protocol-overview/how-does-umas-oracle-work.md)
+* [How does UMA resolve prediction markets?](protocol-overview/how-does-uma-resolve-prediction-markets.md)
 
 ## Using UMA
 
@@ -15,10 +14,12 @@
 * [Proposing via the Oracle Dapp](using-uma/proposing-via-the-oracle-dapp.md)
 * [Proposing Programmatically](using-uma/proposing-programmatically.md)
 * [Disputing Via the Oracle Dapp](using-uma/disputing-oracle-data.md)
-* [Voting Walkthrough](using-uma/voting-walkthrough/README.md)
+* [Voting](using-uma/voting-walkthrough/README.md)
   * [Voter Guide](using-uma/voting-walkthrough/voter-guide.md)
   * [Voting Gas Rebates](using-uma/voting-walkthrough/voting-gas-rebates.md)
   * [Discord Summaries](using-uma/voting-walkthrough/discord-summaries.md)
+  * [DVM 2.0](using-uma/voting-walkthrough/dvm-2.0.md)
+  * [DVM 2.0 FAQ](using-uma/voting-walkthrough/dvm-2.0-faq.md)
 
 ## Community
 
@@ -33,6 +34,7 @@
 
 ## Developers
 
+* [ManagedOptimisticOracleV2](developers/managedoptimisticoraclev2.md)
 * [Optimistic Oracle v2](developers/optimistic-oracle/README.md)
   * [Using Blacklisting Tokens as Currency](developers/optimistic-oracle/using-blacklisting-tokens-as-currency.md)
   * [Quick Start](developers/optimistic-oracle/getting-started.md)
@@ -50,7 +52,6 @@
   * [Data Asserter](developers/optimistic-oracle-v3/data-asserter.md)
   * [Escalation Managers](developers/optimistic-oracle-v3/escalation-managers.md)
   * [Sandboxed Oracle Environment](developers/optimistic-oracle/sandboxed-oracle-environment.md)
-* [ManagedOptimisticOracleV2](developers/managedoptimisticoraclev2.md)
 * [Resolving Testnet Disputes](developers/resolving-disputes.md)
 * [Setting Custom Bond and Liveness Parameters](developers/setting-custom-bond-and-liveness-parameters.md)
 
