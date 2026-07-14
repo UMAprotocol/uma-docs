@@ -1,6 +1,6 @@
 # Default Proposer Whitelist
 
-Risk Labs manages the default proposer whitelist for the ManagedOptimisticOracleV2 contract. The current whitelist can be viewed [here](https://polygonscan.com/address/0x9f35885ce8f67a942d7b2f4fbf937987da08c463#readContract#F1) and is subject to updates and changes in guidelines.
+Risk Labs manages the default proposer whitelist for the ManagedOptimisticOracleV2 contract. The current whitelist can be viewed [here](https://polygonscan.com/address/0x9f35885ce8f67a942d7b2f4fbf937987da08c463#readContract#F1) and is subject to Risk Labs' discretion and changes to the below guidelines.
 
 Note: the whitelist is not used to restrict proposals to known or trusted actors. The whitelist is used to only allow proposers with a history of accurate proposals. This keeps UMA's optimistic system efficient and prevents incorrect proposals from slowing down UMA settlements.&#x20;
 
