@@ -14,8 +14,6 @@ When the proposal appears ready, a Snapshot vote can be created by the proposer 
 
 Proposals that require movement of treasury funds require a 4,000 UMA bond to be posted which is returned if the proposal is successful in an on-chain vote of tokenholders.
 
-RiskLabs, the foundation which established UMA, has indicated its willingness to handle the on-chain proposal and cover the bond payment for proposals which attract majority support on a snapshot poll of tokenholders.
-
 Here is the snapshot for [Polymarket's Liquidity Mining Program](https://discourse.umaproject.org/t/revised-funding-request-for-liquidity-mining-program-extension-from-polymarket/1716).
 
 **Step 3: On-chain Vote**
