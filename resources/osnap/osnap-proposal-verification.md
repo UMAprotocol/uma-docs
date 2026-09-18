@@ -25,4 +25,10 @@ An oSnap proposal's voting results must meet both criteria below to be considere
 
 ## Disputing Proposals&#x20;
 
-If the oSnap request does not meet the Rules, it should be disputed. Disputed requests can not be executed no matter how UMA resolves the dispute. This [section](../../using-uma/disputing-oracle-data.md) outlines the steps to dispute an invalid oSnap request, or any other invalid assertions to UMA's Optimistic Oracle.
+If the oSnap request does not meet the Rules, it should be disputed. Disputed requests can not be executed no matter how UMA resolves the dispute.
+
+oSnap runs on Optimistic Oracle V3, so an oSnap request is an **assertion** rather than a price request. Dispute it by calling [`disputeAssertion`](../../developers/optimistic-oracle-v3/data-asserter.md#disputing-data-assertions) on the OptimisticOracleV3 contract with the request's `assertionId`, within the challenge period.
+
+{% hint style="warning" %}
+oSnap is not one of the integrations served by the [Explorer dapp](../../using-uma/disputing-via-the-explorer-dapp.md) (Polymarket, Predict.fun and Outcome only), so the Explorer's dispute flow does not apply to oSnap requests.
+{% endhint %}
