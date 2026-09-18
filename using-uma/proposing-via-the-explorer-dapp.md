@@ -10,8 +10,8 @@ Onchain proposing and disputing in the Explorer is supported on **Polygon** for 
 
 | Oracle                                | Polygon address                                                                                                         | Proposer whitelist |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| Managed Optimistic Oracle V2 (MOOv2)  | [`0x2C0367a9DB231dDeBd88a94b4f6461a6e47C58B1`](https://polygonscan.com/address/0x2C0367a9DB231dDeBd88a94b4f6461a6e47C58B1) | Enforced           |
-| Optimistic Oracle V2 (OOv2)           | [`0xeE3Afe347D5C74317041E2618C49534dAf887c24`](https://polygonscan.com/address/0xeE3Afe347D5C74317041E2618C49534dAf887c24) | Not enforced       |
+| Managed Optimistic Oracle V2 (MOOv2)  | [`0x2C0367a9DB231dDeBd88a94b4f6461a6e47C58B1`](https://polygonscan.com/address/0x2C0367a9DB231dDeBd88a94b4f6461a6e47C58B1) | Per request        |
+| Optimistic Oracle V2 (OOv2)           | [`0xeE3Afe347D5C74317041E2618C49534dAf887c24`](https://polygonscan.com/address/0xeE3Afe347D5C74317041E2618C49534dAf887c24) | None               |
 
 #### Finding a request to propose on
 
@@ -40,7 +40,9 @@ Once the proposal is submitted the request moves to the **Proposed** tab and its
 
 #### Proposer whitelist on Managed Optimistic Oracle V2
 
-MOOv2 requests enforce a proposer whitelist. Risk Labs manages the default whitelist — see [Default Proposer Whitelist](default-proposer-whitelist.md) for the criteria and update cadence.
+MOOv2 requests _can_ enforce a proposer whitelist, but enforcement is decided per request — it is not a blanket property of the contract. A new request defaults to the contract's `defaultProposerWhitelist` unless the request's `requestManager` overrides it, and the whitelist carries an `isEnforced` flag: when `isEnforced` is false, any address may propose on that request.
+
+Risk Labs manages the default whitelist — see [Default Proposer Whitelist](default-proposer-whitelist.md) for the criteria and update cadence. To read a specific request's effective whitelist and its enforcement status, see [Viewing a Request's Proposer Whitelist](proposing-programmatically.md).
 
 The Explorer checks your connected address against the request's effective whitelist and replaces the propose button with a disabled state explaining why you cannot propose:
 
@@ -55,4 +57,4 @@ OOv2 requests do not enforce a whitelist, so any address may propose on them.
 
 #### Requests without UI actions
 
-Some requests are shown for visibility only. On those, the detail panel reads _"Manual actions are unavailable for this request."_, or links out to the legacy Oracle UI while it remains available. Propose on these [programmatically](proposing-programmatically.md) instead.
+Some requests are shown for visibility only. On those, the detail panel either reads _"Manual actions are unavailable for this request."_, offers a **Propose on Oracle UI ↗** link out to the legacy Oracle dapp while it remains available, or shows a disabled **Proposing unavailable** button when neither path is open. Propose on these [programmatically](proposing-programmatically.md) instead.
