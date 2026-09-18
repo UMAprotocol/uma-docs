@@ -25,4 +25,4 @@ An oSnap proposal's voting results must meet both criteria below to be considere
 
 ## Disputing Proposals&#x20;
 
-If the oSnap request does not meet the Rules, it should be disputed. Disputed requests can not be executed no matter how UMA resolves the dispute. This [section](../../using-uma/disputing-oracle-data.md) outlines the steps to dispute an invalid oSnap request, or any other invalid assertions to UMA's Optimistic Oracle.
+If the oSnap request does not meet the Rules, it should be disputed. Disputed requests can not be executed no matter how UMA resolves the dispute. This [section](../../using-uma/disputing-via-the-explorer-dapp.md) outlines the steps to dispute an invalid oSnap request, or any other invalid assertions to UMA's Optimistic Oracle.
