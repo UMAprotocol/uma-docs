@@ -41,7 +41,11 @@ Disputes are forwarded to the DVM for dispute resolution. After the DVM has reso
 
 ### Dispute Resolution via DVM
 
-The Data Verification Mechanism, or DVM, resolves disputes sent to it by UMA’s optimistic oracle. The DVM is a Schelling point mechanism where UMA stakers resolve disputes in return for staking rewards. Stakers commit secret votes during a 24-hour commit period and reveal them in the following 24-hour reveal period.
+The Data Verification Mechanism, or DVM, resolves disputes sent to it by UMA’s optimistic oracle. The DVM is a Schelling point mechanism where UMA stakers resolve disputes in return for staking rewards.&#x20;
+
+Disputes are resolved in voting rounds in which stakers commit secret votes during a 24-hour commit period and subsequently reveal them in a 24-hour reveal period. Voting rounds follow a fixed schedule with transitions at 24:00 UTC. Disputes must be at least 4 hours old to enter a new voting round. See the image below depicting the dispute resolution schedule.
+
+<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 Disputes resolve when a minimum 65% majority of staked UMA is cast in favor of a single outcome. Stakers who did not vote, or who voted against the majority, are slashed, with the slashed amount redistributed to the majority voters. Slashing and rewards incentivize stakers to vote for the most correct answer. Casting votes in secret prevents lazy voters from copying other voters and dishonest voters from coordinating on an incorrect result.
 
