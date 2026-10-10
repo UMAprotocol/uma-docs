@@ -1,4 +1,6 @@
 redirects:
+    using-uma/proposing-via-the-oracle-dapp: using-uma/proposing-via-the-explorer-dapp.md
+    using-uma/disputing-oracle-data: using-uma/disputing-via-the-explorer-dapp.md
     contracts/Contracts: https://contracts.docs.umaproject.org
     oracle/optimistic-oracle-interface: https://contracts.docs.umaproject.org
     build-walkthrough/build-process: developers/getting-started.md

@@ -11,9 +11,9 @@
 ## Using UMA
 
 * [Default Proposer Whitelist](using-uma/default-proposer-whitelist.md)
-* [Proposing via the Oracle Dapp](using-uma/proposing-via-the-oracle-dapp.md)
+* [Proposing via the Explorer Dapp](using-uma/proposing-via-the-explorer-dapp.md)
 * [Proposing Programmatically](using-uma/proposing-programmatically.md)
-* [Disputing Via the Oracle Dapp](using-uma/disputing-oracle-data.md)
+* [Disputing via the Explorer Dapp](using-uma/disputing-via-the-explorer-dapp.md)
 * [Voting](using-uma/voting-walkthrough/README.md)
   * [Voter Guide](using-uma/voting-walkthrough/voter-guide.md)
   * [Voting Gas Rebates](using-uma/voting-walkthrough/voting-gas-rebates.md)
