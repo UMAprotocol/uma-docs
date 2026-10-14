@@ -3,6 +3,12 @@
 * [Welcome to UMA](README.md)
 * [FAQs](faqs.md)
 
+## Polymarket V2 Migration
+
+* [Overview](polymarket-v2-migration/overview.md)
+* [Smart Contract Overview](polymarket-v2-migration/smart-contract-overview.md)
+* [Ancillary Data JSON Specification](polymarket-v2-migration/ancillary-data-json-specification.md)
+
 ## Protocol Overview
 
 * [How does UMA work?](protocol-overview/how-does-umas-oracle-work.md)
