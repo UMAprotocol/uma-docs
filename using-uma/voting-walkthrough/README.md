@@ -10,9 +10,10 @@ This tutorial describes how to vote using the [UMA voter dApp](https://vote.uma.
 
 * Commit Vote: the first 24hrs of a voting period allows you to encrypt and commit your vote
 * Reveal vote: the second 24hrs of a voting period allows you to decrypt and reveal your vote. Votes are tallied by a DVM smart contract at the end of the reveal period.
-* Claim rewards: staking rewards are constantly accrued. You can claim + restake or just claim them to your wallet whenever you like.
 
 The purpose behind using the [Commit/Reveal scheme](https://www.gitcoin.co/blog/commit-reveal-scheme-on-ethereum) is that it allows votes to remain private.
+
+Staking rewards are constantly accrued. You can claim + restake or just claim them to your wallet whenever you like.
 
 ### Instructions:
 
