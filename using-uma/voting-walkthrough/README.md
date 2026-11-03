@@ -2,7 +2,9 @@
 description: How to stake tokens, vote, and claim rewards
 ---
 
-# Voting Walkthrough
+# Voting
+
+:warning: **Warning: UMA stakers are slashed for every vote they do not cast and every incorrect vote. See details below.**
 
 This tutorial describes how to vote using the [UMA voter dApp](https://vote.uma.xyz/). For context, each voting period is 48hrs. Voting takes 3 steps:
 
@@ -23,23 +25,23 @@ The purpose behind using the [Commit/Reveal scheme](https://www.gitcoin.co/blog/
 
 <figure><img src="../../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption><p>Indicate that you understand the cooldown period, approve, then stake your $UMA</p></figcaption></figure>
 
-4. You can only vote when there is a live vote(s), and during the **Commit period.**&#x20;
-5. Choose your vote(s) from the dropdown menu, then click "Commit vote" and send the transaction.&#x20;
+4. You can only vote when there is a live vote(s), and during the **Commit period.**
+5. Choose your vote(s) from the dropdown menu, then click "Commit vote" and send the transaction.
 6. Each voting round consists of a 24-hour commit period, followed by a 24-hour reveal period. **In order for your vote(s) to count, you need to return and reveal your vote(s) during the reveal period.**
-7. During the reveal period, return to the Dapp and choose "Reveal" to reveal your vote(s).&#x20;
+7. During the reveal period, return to the Dapp and choose "Reveal" to reveal your vote(s).
 
-Once the dapp shows your vote as "Revealed," you are done with the voting process. The vote(s) will be finalized when the reveal period ends, at which point you will be able to see if you voted correctly. If you did, you will receive a bonus. If you voted inaccurately or failed to vote, you will have a penalty applied to your stake. This penalty amount is redistributed to accurate voters.
+Once the dapp shows your vote as "Revealed," you are done with the voting process. The vote(s) will be finalized when the reveal period ends, at which point you will be able to see if you voted correctly. If you did, you will receive a bonus. :warning: **If you voted inaccurately or failed to vote, you will have a penalty applied to your stake.** :warning: This penalty amount is redistributed to accurate voters.
 
 **Protocol Parameters (adjustable by governance)**
 
 Emissions: .18 $UMA/second
 
-Missed vote penalty: 0.1% of staked balance
+:warning: **Missed vote penalty: 0.1% of staked balance** :warning:
 
 Withdraw cooldown period: 7 days
 
 ### Claim rewards
 
-Emission rewards begin to accrue automatically when you stake $UMA. You may claim these rewards to your wallet, or claim-and-stake to your staked balance.&#x20;
+Emission rewards begin to accrue automatically when you stake $UMA. You may claim these rewards to your wallet, or claim-and-stake to your staked balance.
 
 Rewards associated with voting successfully are automatically added to your staked balance after the voting period ends.<br>
