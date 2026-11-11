@@ -8,7 +8,7 @@ Note: the whitelist is not used to restrict proposals to known or trusted actors
 
 Proposer addresses must meet the two below criteria over the last 6 months:
 
-* 5 or more Polymarket or Predict.fun proposals on OptimisticOracleV2 or ManagedOptimisticOracleV2
+* 5 or more Polymarket, Predict.fun, or Risk Labs proposals on the Polygon OptimisticOracleV2 or ManagedOptimisticOracleV2
 * Proposal accuracy greater than 95% in the last 6 months.
 
 Proposers who base their proposal timing on other proposer's transactions in the public mempool (i.e. front run) will be removed from the whitelist.
