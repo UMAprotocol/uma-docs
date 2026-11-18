@@ -76,6 +76,7 @@
 * [oSnap (Deprecated)](resources/osnap/README.md)
   * [Disabling oSnap via Zodiac Safe App](resources/osnap/disabling-osnap-via-zodiac-safe-app.md)
   * [oSnap Proposal Verification](resources/osnap/osnap-proposal-verification.md)
+* [Oracle Dapp (Deprecated)](resources/oracle-dapp-deprecated.md)
 * [Additional Resources](resources/additional-resources.md)
 * [Glossary](resources/glossary.md)
 * [Links](resources/links.md)
